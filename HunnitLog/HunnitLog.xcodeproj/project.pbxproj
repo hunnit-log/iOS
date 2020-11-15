@@ -13,6 +13,9 @@
 		635D7D26255D6B910040A94F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635D7D25255D6B910040A94F /* Preview Assets.xcassets */; };
 		635D7D31255D6B910040A94F /* HunnitLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D7D30255D6B910040A94F /* HunnitLogTests.swift */; };
 		635D7D3C255D6B920040A94F /* HunnitLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D7D3B255D6B920040A94F /* HunnitLogUITests.swift */; };
+		E0B91481256158AA00F93987 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147E256158AA00F93987 /* Tracker.swift */; };
+		E0B91482256158AA00F93987 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147F256158AA00F93987 /* APIService.swift */; };
+		E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B91480256158AA00F93987 /* APIServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		635D7D37255D6B920040A94F /* HunnitLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunnitLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635D7D3B255D6B920040A94F /* HunnitLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogUITests.swift; sourceTree = "<group>"; };
 		635D7D3D255D6B920040A94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0B9147E256158AA00F93987 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		E0B9147F256158AA00F93987 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E0B91480256158AA00F93987 /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,11 @@
 		635D7D1D255D6B8F0040A94F /* HunnitLog */ = {
 			isa = PBXGroup;
 			children = (
+				E0B9146A2561581000F93987 /* Service */,
+				E0B9147A2561587900F93987 /* Model */,
+				E0B9149A256158DF00F93987 /* View */,
+				E0B9149B256158E300F93987 /* ViewModel */,
 				635D7D1E255D6B8F0040A94F /* HunnitLogApp.swift */,
-				635D7D20255D6B8F0040A94F /* ContentView.swift */,
 				635D7D22255D6B910040A94F /* Assets.xcassets */,
 				635D7D27255D6B910040A94F /* Info.plist */,
 				635D7D24255D6B910040A94F /* Preview Content */,
@@ -128,6 +137,46 @@
 				635D7D3D255D6B920040A94F /* Info.plist */,
 			);
 			path = HunnitLogUITests;
+			sourceTree = "<group>";
+		};
+		E0B9146A2561581000F93987 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E0B9147F256158AA00F93987 /* APIService.swift */,
+				E0B91480256158AA00F93987 /* APIServiceError.swift */,
+				E0B9147E256158AA00F93987 /* Tracker.swift */,
+				E0B91494256158BC00F93987 /* Request */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E0B9147A2561587900F93987 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0B91494256158BC00F93987 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		E0B9149A256158DF00F93987 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				635D7D20255D6B8F0040A94F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0B9149B256158E300F93987 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B91481256158AA00F93987 /* Tracker.swift in Sources */,
+				E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */,
 				635D7D21255D6B8F0040A94F /* ContentView.swift in Sources */,
+				E0B91482256158AA00F93987 /* APIService.swift in Sources */,
 				635D7D1F255D6B8F0040A94F /* HunnitLogApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
