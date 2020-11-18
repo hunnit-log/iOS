@@ -7,62 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		635D7D1F255D6B8F0040A94F /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D7D1E255D6B8F0040A94F /* HunnitLogApp.swift */; };
-		635D7D21255D6B8F0040A94F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D7D20255D6B8F0040A94F /* ContentView.swift */; };
-		635D7D23255D6B910040A94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635D7D22255D6B910040A94F /* Assets.xcassets */; };
-		635D7D26255D6B910040A94F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635D7D25255D6B910040A94F /* Preview Assets.xcassets */; };
-		635D7D31255D6B910040A94F /* HunnitLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D7D30255D6B910040A94F /* HunnitLogTests.swift */; };
-		635D7D3C255D6B920040A94F /* HunnitLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D7D3B255D6B920040A94F /* HunnitLogUITests.swift */; };
+		6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16B25655C960007A926 /* HunnitLogApp.swift */; };
+		6391D16E25655C960007A926 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16D25655C960007A926 /* ContentView.swift */; };
+		6391D17025655C970007A926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D16F25655C970007A926 /* Assets.xcassets */; };
+		6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D17225655C970007A926 /* Preview Assets.xcassets */; };
+		6391D17E25655C980007A926 /* HunnitLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D17D25655C980007A926 /* HunnitLogTests.swift */; };
+		6391D18925655C980007A926 /* HunnitLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D18825655C980007A926 /* HunnitLogUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		635D7D2D255D6B910040A94F /* PBXContainerItemProxy */ = {
+		6391D17A25655C980007A926 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 635D7D13255D6B8F0040A94F /* Project object */;
+			containerPortal = 6391D16025655C960007A926 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 635D7D1A255D6B8F0040A94F;
+			remoteGlobalIDString = 6391D16725655C960007A926;
 			remoteInfo = HunnitLog;
 		};
-		635D7D38255D6B920040A94F /* PBXContainerItemProxy */ = {
+		6391D18525655C980007A926 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 635D7D13255D6B8F0040A94F /* Project object */;
+			containerPortal = 6391D16025655C960007A926 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 635D7D1A255D6B8F0040A94F;
+			remoteGlobalIDString = 6391D16725655C960007A926;
 			remoteInfo = HunnitLog;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		635D7D1B255D6B8F0040A94F /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		635D7D1E255D6B8F0040A94F /* HunnitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogApp.swift; sourceTree = "<group>"; };
-		635D7D20255D6B8F0040A94F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		635D7D22255D6B910040A94F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		635D7D25255D6B910040A94F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		635D7D27255D6B910040A94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		635D7D2C255D6B910040A94F /* HunnitLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunnitLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		635D7D30255D6B910040A94F /* HunnitLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogTests.swift; sourceTree = "<group>"; };
-		635D7D32255D6B910040A94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		635D7D37255D6B920040A94F /* HunnitLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunnitLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		635D7D3B255D6B920040A94F /* HunnitLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogUITests.swift; sourceTree = "<group>"; };
-		635D7D3D255D6B920040A94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6391D16825655C960007A926 /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6391D16B25655C960007A926 /* HunnitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogApp.swift; sourceTree = "<group>"; };
+		6391D16D25655C960007A926 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6391D16F25655C970007A926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6391D17225655C970007A926 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6391D17425655C970007A926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6391D17925655C980007A926 /* HunnitLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunnitLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6391D17D25655C980007A926 /* HunnitLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogTests.swift; sourceTree = "<group>"; };
+		6391D17F25655C980007A926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6391D18425655C980007A926 /* HunnitLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunnitLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6391D18825655C980007A926 /* HunnitLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogUITests.swift; sourceTree = "<group>"; };
+		6391D18A25655C980007A926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		635D7D18255D6B8F0040A94F /* Frameworks */ = {
+		6391D16525655C960007A926 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		635D7D29255D6B910040A94F /* Frameworks */ = {
+		6391D17625655C980007A926 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		635D7D34255D6B920040A94F /* Frameworks */ = {
+		6391D18125655C980007A926 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,60 +72,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		635D7D12255D6B8F0040A94F = {
+		6391D15F25655C960007A926 = {
 			isa = PBXGroup;
 			children = (
-				635D7D1D255D6B8F0040A94F /* HunnitLog */,
-				635D7D2F255D6B910040A94F /* HunnitLogTests */,
-				635D7D3A255D6B920040A94F /* HunnitLogUITests */,
-				635D7D1C255D6B8F0040A94F /* Products */,
+				6391D16A25655C960007A926 /* HunnitLog */,
+				6391D17C25655C980007A926 /* HunnitLogTests */,
+				6391D18725655C980007A926 /* HunnitLogUITests */,
+				6391D16925655C960007A926 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		635D7D1C255D6B8F0040A94F /* Products */ = {
+		6391D16925655C960007A926 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				635D7D1B255D6B8F0040A94F /* HunnitLog.app */,
-				635D7D2C255D6B910040A94F /* HunnitLogTests.xctest */,
-				635D7D37255D6B920040A94F /* HunnitLogUITests.xctest */,
+				6391D16825655C960007A926 /* HunnitLog.app */,
+				6391D17925655C980007A926 /* HunnitLogTests.xctest */,
+				6391D18425655C980007A926 /* HunnitLogUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		635D7D1D255D6B8F0040A94F /* HunnitLog */ = {
+		6391D16A25655C960007A926 /* HunnitLog */ = {
 			isa = PBXGroup;
 			children = (
-				635D7D1E255D6B8F0040A94F /* HunnitLogApp.swift */,
-				635D7D20255D6B8F0040A94F /* ContentView.swift */,
-				635D7D22255D6B910040A94F /* Assets.xcassets */,
-				635D7D27255D6B910040A94F /* Info.plist */,
-				635D7D24255D6B910040A94F /* Preview Content */,
+				6391D16B25655C960007A926 /* HunnitLogApp.swift */,
+				6391D16D25655C960007A926 /* ContentView.swift */,
+				6391D16F25655C970007A926 /* Assets.xcassets */,
+				6391D17425655C970007A926 /* Info.plist */,
+				6391D17125655C970007A926 /* Preview Content */,
 			);
 			path = HunnitLog;
 			sourceTree = "<group>";
 		};
-		635D7D24255D6B910040A94F /* Preview Content */ = {
+		6391D17125655C970007A926 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				635D7D25255D6B910040A94F /* Preview Assets.xcassets */,
+				6391D17225655C970007A926 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		635D7D2F255D6B910040A94F /* HunnitLogTests */ = {
+		6391D17C25655C980007A926 /* HunnitLogTests */ = {
 			isa = PBXGroup;
 			children = (
-				635D7D30255D6B910040A94F /* HunnitLogTests.swift */,
-				635D7D32255D6B910040A94F /* Info.plist */,
+				6391D17D25655C980007A926 /* HunnitLogTests.swift */,
+				6391D17F25655C980007A926 /* Info.plist */,
 			);
 			path = HunnitLogTests;
 			sourceTree = "<group>";
 		};
-		635D7D3A255D6B920040A94F /* HunnitLogUITests */ = {
+		6391D18725655C980007A926 /* HunnitLogUITests */ = {
 			isa = PBXGroup;
 			children = (
-				635D7D3B255D6B920040A94F /* HunnitLogUITests.swift */,
-				635D7D3D255D6B920040A94F /* Info.plist */,
+				6391D18825655C980007A926 /* HunnitLogUITests.swift */,
+				6391D18A25655C980007A926 /* Info.plist */,
 			);
 			path = HunnitLogUITests;
 			sourceTree = "<group>";
@@ -133,13 +133,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		635D7D1A255D6B8F0040A94F /* HunnitLog */ = {
+		6391D16725655C960007A926 /* HunnitLog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 635D7D40255D6B920040A94F /* Build configuration list for PBXNativeTarget "HunnitLog" */;
+			buildConfigurationList = 6391D18D25655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLog" */;
 			buildPhases = (
-				635D7D17255D6B8F0040A94F /* Sources */,
-				635D7D18255D6B8F0040A94F /* Frameworks */,
-				635D7D19255D6B8F0040A94F /* Resources */,
+				6391D16425655C960007A926 /* Sources */,
+				6391D16525655C960007A926 /* Frameworks */,
+				6391D16625655C960007A926 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -147,68 +147,68 @@
 			);
 			name = HunnitLog;
 			productName = HunnitLog;
-			productReference = 635D7D1B255D6B8F0040A94F /* HunnitLog.app */;
+			productReference = 6391D16825655C960007A926 /* HunnitLog.app */;
 			productType = "com.apple.product-type.application";
 		};
-		635D7D2B255D6B910040A94F /* HunnitLogTests */ = {
+		6391D17825655C980007A926 /* HunnitLogTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 635D7D43255D6B920040A94F /* Build configuration list for PBXNativeTarget "HunnitLogTests" */;
+			buildConfigurationList = 6391D19025655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLogTests" */;
 			buildPhases = (
-				635D7D28255D6B910040A94F /* Sources */,
-				635D7D29255D6B910040A94F /* Frameworks */,
-				635D7D2A255D6B910040A94F /* Resources */,
+				6391D17525655C980007A926 /* Sources */,
+				6391D17625655C980007A926 /* Frameworks */,
+				6391D17725655C980007A926 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				635D7D2E255D6B910040A94F /* PBXTargetDependency */,
+				6391D17B25655C980007A926 /* PBXTargetDependency */,
 			);
 			name = HunnitLogTests;
 			productName = HunnitLogTests;
-			productReference = 635D7D2C255D6B910040A94F /* HunnitLogTests.xctest */;
+			productReference = 6391D17925655C980007A926 /* HunnitLogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		635D7D36255D6B920040A94F /* HunnitLogUITests */ = {
+		6391D18325655C980007A926 /* HunnitLogUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 635D7D46255D6B920040A94F /* Build configuration list for PBXNativeTarget "HunnitLogUITests" */;
+			buildConfigurationList = 6391D19325655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLogUITests" */;
 			buildPhases = (
-				635D7D33255D6B920040A94F /* Sources */,
-				635D7D34255D6B920040A94F /* Frameworks */,
-				635D7D35255D6B920040A94F /* Resources */,
+				6391D18025655C980007A926 /* Sources */,
+				6391D18125655C980007A926 /* Frameworks */,
+				6391D18225655C980007A926 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				635D7D39255D6B920040A94F /* PBXTargetDependency */,
+				6391D18625655C980007A926 /* PBXTargetDependency */,
 			);
 			name = HunnitLogUITests;
 			productName = HunnitLogUITests;
-			productReference = 635D7D37255D6B920040A94F /* HunnitLogUITests.xctest */;
+			productReference = 6391D18425655C980007A926 /* HunnitLogUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		635D7D13255D6B8F0040A94F /* Project object */ = {
+		6391D16025655C960007A926 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					635D7D1A255D6B8F0040A94F = {
-						CreatedOnToolsVersion = 12.1;
+					6391D16725655C960007A926 = {
+						CreatedOnToolsVersion = 12.2;
 					};
-					635D7D2B255D6B910040A94F = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 635D7D1A255D6B8F0040A94F;
+					6391D17825655C980007A926 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6391D16725655C960007A926;
 					};
-					635D7D36255D6B920040A94F = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 635D7D1A255D6B8F0040A94F;
+					6391D18325655C980007A926 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6391D16725655C960007A926;
 					};
 				};
 			};
-			buildConfigurationList = 635D7D16255D6B8F0040A94F /* Build configuration list for PBXProject "HunnitLog" */;
+			buildConfigurationList = 6391D16325655C960007A926 /* Build configuration list for PBXProject "HunnitLog" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,36 +216,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 635D7D12255D6B8F0040A94F;
-			productRefGroup = 635D7D1C255D6B8F0040A94F /* Products */;
+			mainGroup = 6391D15F25655C960007A926;
+			productRefGroup = 6391D16925655C960007A926 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				635D7D1A255D6B8F0040A94F /* HunnitLog */,
-				635D7D2B255D6B910040A94F /* HunnitLogTests */,
-				635D7D36255D6B920040A94F /* HunnitLogUITests */,
+				6391D16725655C960007A926 /* HunnitLog */,
+				6391D17825655C980007A926 /* HunnitLogTests */,
+				6391D18325655C980007A926 /* HunnitLogUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		635D7D19255D6B8F0040A94F /* Resources */ = {
+		6391D16625655C960007A926 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635D7D26255D6B910040A94F /* Preview Assets.xcassets in Resources */,
-				635D7D23255D6B910040A94F /* Assets.xcassets in Resources */,
+				6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */,
+				6391D17025655C970007A926 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		635D7D2A255D6B910040A94F /* Resources */ = {
+		6391D17725655C980007A926 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		635D7D35255D6B920040A94F /* Resources */ = {
+		6391D18225655C980007A926 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,48 +255,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		635D7D17255D6B8F0040A94F /* Sources */ = {
+		6391D16425655C960007A926 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635D7D21255D6B8F0040A94F /* ContentView.swift in Sources */,
-				635D7D1F255D6B8F0040A94F /* HunnitLogApp.swift in Sources */,
+				6391D16E25655C960007A926 /* ContentView.swift in Sources */,
+				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		635D7D28255D6B910040A94F /* Sources */ = {
+		6391D17525655C980007A926 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635D7D31255D6B910040A94F /* HunnitLogTests.swift in Sources */,
+				6391D17E25655C980007A926 /* HunnitLogTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		635D7D33255D6B920040A94F /* Sources */ = {
+		6391D18025655C980007A926 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635D7D3C255D6B920040A94F /* HunnitLogUITests.swift in Sources */,
+				6391D18925655C980007A926 /* HunnitLogUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		635D7D2E255D6B910040A94F /* PBXTargetDependency */ = {
+		6391D17B25655C980007A926 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 635D7D1A255D6B8F0040A94F /* HunnitLog */;
-			targetProxy = 635D7D2D255D6B910040A94F /* PBXContainerItemProxy */;
+			target = 6391D16725655C960007A926 /* HunnitLog */;
+			targetProxy = 6391D17A25655C980007A926 /* PBXContainerItemProxy */;
 		};
-		635D7D39255D6B920040A94F /* PBXTargetDependency */ = {
+		6391D18625655C980007A926 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 635D7D1A255D6B8F0040A94F /* HunnitLog */;
-			targetProxy = 635D7D38255D6B920040A94F /* PBXContainerItemProxy */;
+			target = 6391D16725655C960007A926 /* HunnitLog */;
+			targetProxy = 6391D18525655C980007A926 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		635D7D3E255D6B920040A94F /* Debug */ = {
+		6391D18B25655C980007A926 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -357,7 +357,7 @@
 			};
 			name = Debug;
 		};
-		635D7D3F255D6B920040A94F /* Release */ = {
+		6391D18C25655C980007A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -402,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -412,7 +412,7 @@
 			};
 			name = Release;
 		};
-		635D7D41255D6B920040A94F /* Debug */ = {
+		6391D18E25655C980007A926 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -435,7 +435,7 @@
 			};
 			name = Debug;
 		};
-		635D7D42255D6B920040A94F /* Release */ = {
+		6391D18F25655C980007A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -458,7 +458,7 @@
 			};
 			name = Release;
 		};
-		635D7D44255D6B920040A94F /* Debug */ = {
+		6391D19125655C980007A926 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -480,7 +480,7 @@
 			};
 			name = Debug;
 		};
-		635D7D45255D6B920040A94F /* Release */ = {
+		6391D19225655C980007A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -502,7 +502,7 @@
 			};
 			name = Release;
 		};
-		635D7D47255D6B920040A94F /* Debug */ = {
+		6391D19425655C980007A926 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -522,7 +522,7 @@
 			};
 			name = Debug;
 		};
-		635D7D48255D6B920040A94F /* Release */ = {
+		6391D19525655C980007A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -545,43 +545,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		635D7D16255D6B8F0040A94F /* Build configuration list for PBXProject "HunnitLog" */ = {
+		6391D16325655C960007A926 /* Build configuration list for PBXProject "HunnitLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				635D7D3E255D6B920040A94F /* Debug */,
-				635D7D3F255D6B920040A94F /* Release */,
+				6391D18B25655C980007A926 /* Debug */,
+				6391D18C25655C980007A926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		635D7D40255D6B920040A94F /* Build configuration list for PBXNativeTarget "HunnitLog" */ = {
+		6391D18D25655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				635D7D41255D6B920040A94F /* Debug */,
-				635D7D42255D6B920040A94F /* Release */,
+				6391D18E25655C980007A926 /* Debug */,
+				6391D18F25655C980007A926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		635D7D43255D6B920040A94F /* Build configuration list for PBXNativeTarget "HunnitLogTests" */ = {
+		6391D19025655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLogTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				635D7D44255D6B920040A94F /* Debug */,
-				635D7D45255D6B920040A94F /* Release */,
+				6391D19125655C980007A926 /* Debug */,
+				6391D19225655C980007A926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		635D7D46255D6B920040A94F /* Build configuration list for PBXNativeTarget "HunnitLogUITests" */ = {
+		6391D19325655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLogUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				635D7D47255D6B920040A94F /* Debug */,
-				635D7D48255D6B920040A94F /* Release */,
+				6391D19425655C980007A926 /* Debug */,
+				6391D19525655C980007A926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 635D7D13255D6B8F0040A94F /* Project object */;
+	rootObject = 6391D16025655C960007A926 /* Project object */;
 }
