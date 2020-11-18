@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632A10832566BDCB0085B126 /* CardContentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A10822566BDCB0085B126 /* CardContentable.swift */; };
 		6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16B25655C960007A926 /* HunnitLogApp.swift */; };
 		6391D16E25655C960007A926 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16D25655C960007A926 /* ContentView.swift */; };
 		6391D17025655C970007A926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D16F25655C970007A926 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		632A10822566BDCB0085B126 /* CardContentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentable.swift; sourceTree = "<group>"; };
 		6391D16825655C960007A926 /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6391D16B25655C960007A926 /* HunnitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogApp.swift; sourceTree = "<group>"; };
 		6391D16D25655C960007A926 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		630EBCCD256682CB00CDFA50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				630EBCCE256682D600CDFA50 /* Resropect */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		630EBCCE256682D600CDFA50 /* Resropect */ = {
+			isa = PBXGroup;
+			children = (
+				632A10822566BDCB0085B126 /* CardContentable.swift */,
+			);
+			path = Resropect;
+			sourceTree = "<group>";
+		};
 		6391D15F25655C960007A926 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +113,7 @@
 		6391D16A25655C960007A926 /* HunnitLog */ = {
 			isa = PBXGroup;
 			children = (
+				630EBCCD256682CB00CDFA50 /* Views */,
 				6391D16B25655C960007A926 /* HunnitLogApp.swift */,
 				6391D16D25655C960007A926 /* ContentView.swift */,
 				6391D16F25655C970007A926 /* Assets.xcassets */,
@@ -261,6 +280,7 @@
 			files = (
 				6391D16E25655C960007A926 /* ContentView.swift in Sources */,
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
+				632A10832566BDCB0085B126 /* CardContentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
