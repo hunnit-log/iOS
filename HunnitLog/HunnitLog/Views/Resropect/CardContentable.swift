@@ -83,3 +83,26 @@ struct ToBeWrittenContent: CardContentable {
     }
 }
 
+//MARK: - AchievementContent
+struct AchievementContent: CardContentable {
+    let period: String
+    let achievementRate: Double
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(period)
+                    .font(.system(size: 16))
+                    .fontWeight(.bold)
+                Text("총 \(String(format: "%.2f", achievementRate))% 달성")
+                    .font(.system(size: 16))
+                    .fontWeight(.regular)
+                    .foregroundColor(.gray)
+            }
+            Spacer()
+            Image(systemName: "chevron.right")
+                .frame(width: 24, height: 24)
+        }
+        .padding(.leading, 20)
+        .padding(.trailing, 11)
+    }
+}
