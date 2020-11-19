@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */; };
+		630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD212566A38700CDFA50 /* RetrospectRow.swift */; };
 		632A106E2566B94C0085B126 /* ShadowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A106D2566B94C0085B126 /* ShadowCard.swift */; };
 		632A10832566BDCB0085B126 /* CardContentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A10822566BDCB0085B126 /* CardContentable.swift */; };
 		6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16B25655C960007A926 /* HunnitLogApp.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfableGrayLine.swift; sourceTree = "<group>"; };
+		630EBD212566A38700CDFA50 /* RetrospectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectRow.swift; sourceTree = "<group>"; };
 		632A106D2566B94C0085B126 /* ShadowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowCard.swift; sourceTree = "<group>"; };
 		632A10822566BDCB0085B126 /* CardContentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentable.swift; sourceTree = "<group>"; };
 		6391D16825655C960007A926 /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +93,8 @@
 			children = (
 				632A10822566BDCB0085B126 /* CardContentable.swift */,
 				632A106D2566B94C0085B126 /* ShadowCard.swift */,
+				630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */,
+				630EBD212566A38700CDFA50 /* RetrospectRow.swift */,
 			);
 			path = Resropect;
 			sourceTree = "<group>";
@@ -283,6 +289,8 @@
 			files = (
 				632A106E2566B94C0085B126 /* ShadowCard.swift in Sources */,
 				6391D16E25655C960007A926 /* ContentView.swift in Sources */,
+				630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */,
+				630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */,
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				632A10832566BDCB0085B126 /* CardContentable.swift in Sources */,
 			);
