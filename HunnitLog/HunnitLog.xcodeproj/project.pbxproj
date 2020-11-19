@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16B25655C960007A926 /* HunnitLogApp.swift */; };
+		6391D16E25655C960007A926 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16D25655C960007A926 /* ContentView.swift */; };
+		6391D17025655C970007A926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D16F25655C970007A926 /* Assets.xcassets */; };
+		6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D17225655C970007A926 /* Preview Assets.xcassets */; };
+		6391D17E25655C980007A926 /* HunnitLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D17D25655C980007A926 /* HunnitLogTests.swift */; };
+		6391D18925655C980007A926 /* HunnitLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D18825655C980007A926 /* HunnitLogUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6391D17A25655C980007A926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6391D16025655C960007A926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6391D16725655C960007A926;
+			remoteInfo = HunnitLog;
+		};
+		6391D18525655C980007A926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6391D16025655C960007A926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6391D16725655C960007A926;
+			remoteInfo = HunnitLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6391D16825655C960007A926 /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6391D16B25655C960007A926 /* HunnitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogApp.swift; sourceTree = "<group>"; };
+		6391D16D25655C960007A926 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6391D16F25655C970007A926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6391D17225655C970007A926 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6391D17425655C970007A926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6391D17925655C980007A926 /* HunnitLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunnitLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6391D17D25655C980007A926 /* HunnitLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogTests.swift; sourceTree = "<group>"; };
+		6391D17F25655C980007A926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6391D18425655C980007A926 /* HunnitLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunnitLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6391D18825655C980007A926 /* HunnitLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogUITests.swift; sourceTree = "<group>"; };
+		6391D18A25655C980007A926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6391D16525655C960007A926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6391D17625655C980007A926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6391D18125655C980007A926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6391D15F25655C960007A926 = {
+			isa = PBXGroup;
+			children = (
+				6391D16A25655C960007A926 /* HunnitLog */,
+				6391D17C25655C980007A926 /* HunnitLogTests */,
+				6391D18725655C980007A926 /* HunnitLogUITests */,
+				6391D16925655C960007A926 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6391D16925655C960007A926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6391D16825655C960007A926 /* HunnitLog.app */,
+				6391D17925655C980007A926 /* HunnitLogTests.xctest */,
+				6391D18425655C980007A926 /* HunnitLogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6391D16A25655C960007A926 /* HunnitLog */ = {
+			isa = PBXGroup;
+			children = (
+				6391D16B25655C960007A926 /* HunnitLogApp.swift */,
+				6391D16D25655C960007A926 /* ContentView.swift */,
+				6391D16F25655C970007A926 /* Assets.xcassets */,
+				6391D17425655C970007A926 /* Info.plist */,
+				6391D17125655C970007A926 /* Preview Content */,
+			);
+			path = HunnitLog;
+			sourceTree = "<group>";
+		};
+		6391D17125655C970007A926 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6391D17225655C970007A926 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6391D17C25655C980007A926 /* HunnitLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				6391D17D25655C980007A926 /* HunnitLogTests.swift */,
+				6391D17F25655C980007A926 /* Info.plist */,
+			);
+			path = HunnitLogTests;
+			sourceTree = "<group>";
+		};
+		6391D18725655C980007A926 /* HunnitLogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6391D18825655C980007A926 /* HunnitLogUITests.swift */,
+				6391D18A25655C980007A926 /* Info.plist */,
+			);
+			path = HunnitLogUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6391D16725655C960007A926 /* HunnitLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6391D18D25655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLog" */;
+			buildPhases = (
+				6391D16425655C960007A926 /* Sources */,
+				6391D16525655C960007A926 /* Frameworks */,
+				6391D16625655C960007A926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HunnitLog;
+			productName = HunnitLog;
+			productReference = 6391D16825655C960007A926 /* HunnitLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6391D17825655C980007A926 /* HunnitLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6391D19025655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLogTests" */;
+			buildPhases = (
+				6391D17525655C980007A926 /* Sources */,
+				6391D17625655C980007A926 /* Frameworks */,
+				6391D17725655C980007A926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6391D17B25655C980007A926 /* PBXTargetDependency */,
+			);
+			name = HunnitLogTests;
+			productName = HunnitLogTests;
+			productReference = 6391D17925655C980007A926 /* HunnitLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6391D18325655C980007A926 /* HunnitLogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6391D19325655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLogUITests" */;
+			buildPhases = (
+				6391D18025655C980007A926 /* Sources */,
+				6391D18125655C980007A926 /* Frameworks */,
+				6391D18225655C980007A926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6391D18625655C980007A926 /* PBXTargetDependency */,
+			);
+			name = HunnitLogUITests;
+			productName = HunnitLogUITests;
+			productReference = 6391D18425655C980007A926 /* HunnitLogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6391D16025655C960007A926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					6391D16725655C960007A926 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					6391D17825655C980007A926 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6391D16725655C960007A926;
+					};
+					6391D18325655C980007A926 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 6391D16725655C960007A926;
+					};
+				};
+			};
+			buildConfigurationList = 6391D16325655C960007A926 /* Build configuration list for PBXProject "HunnitLog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6391D15F25655C960007A926;
+			productRefGroup = 6391D16925655C960007A926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6391D16725655C960007A926 /* HunnitLog */,
+				6391D17825655C980007A926 /* HunnitLogTests */,
+				6391D18325655C980007A926 /* HunnitLogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6391D16625655C960007A926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */,
+				6391D17025655C970007A926 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6391D17725655C980007A926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6391D18225655C980007A926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6391D16425655C960007A926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6391D16E25655C960007A926 /* ContentView.swift in Sources */,
+				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6391D17525655C980007A926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6391D17E25655C980007A926 /* HunnitLogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6391D18025655C980007A926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6391D18925655C980007A926 /* HunnitLogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6391D17B25655C980007A926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6391D16725655C960007A926 /* HunnitLog */;
+			targetProxy = 6391D17A25655C980007A926 /* PBXContainerItemProxy */;
+		};
+		6391D18625655C980007A926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6391D16725655C960007A926 /* HunnitLog */;
+			targetProxy = 6391D18525655C980007A926 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6391D18B25655C980007A926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6391D18C25655C980007A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6391D18E25655C980007A926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HunnitLog/Preview Content\"";
+				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HunnitLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choya.sqoo.naljin.HunnitLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6391D18F25655C980007A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HunnitLog/Preview Content\"";
+				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HunnitLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choya.sqoo.naljin.HunnitLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6391D19125655C980007A926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				INFOPLIST_FILE = HunnitLogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.choya.sqoo.naljin.HunnitLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HunnitLog.app/HunnitLog";
+			};
+			name = Debug;
+		};
+		6391D19225655C980007A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				INFOPLIST_FILE = HunnitLogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.choya.sqoo.naljin.HunnitLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HunnitLog.app/HunnitLog";
+			};
+			name = Release;
+		};
+		6391D19425655C980007A926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				INFOPLIST_FILE = HunnitLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.choya.sqoo.naljin.HunnitLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HunnitLog;
+			};
+			name = Debug;
+		};
+		6391D19525655C980007A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				INFOPLIST_FILE = HunnitLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.choya.sqoo.naljin.HunnitLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HunnitLog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6391D16325655C960007A926 /* Build configuration list for PBXProject "HunnitLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6391D18B25655C980007A926 /* Debug */,
+				6391D18C25655C980007A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6391D18D25655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6391D18E25655C980007A926 /* Debug */,
+				6391D18F25655C980007A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6391D19025655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6391D19125655C980007A926 /* Debug */,
+				6391D19225655C980007A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6391D19325655C980007A926 /* Build configuration list for PBXNativeTarget "HunnitLogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6391D19425655C980007A926 /* Debug */,
+				6391D19525655C980007A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6391D16025655C960007A926 /* Project object */;
+}
