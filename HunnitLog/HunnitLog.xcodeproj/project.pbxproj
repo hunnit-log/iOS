@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		562F6954256A721600C50C97 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562F6953256A721600C50C97 /* Colors.xcassets */; };
+		562F6969256A729600C50C97 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F6968256A729600C50C97 /* CustomColor.swift */; };
 		635D7D1F255D6B8F0040A94F /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D7D1E255D6B8F0040A94F /* HunnitLogApp.swift */; };
 		635D7D21255D6B8F0040A94F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D7D20255D6B8F0040A94F /* ContentView.swift */; };
 		635D7D23255D6B910040A94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635D7D22255D6B910040A94F /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		562F6953256A721600C50C97 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		562F6968256A729600C50C97 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		635D7D1B255D6B8F0040A94F /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		635D7D1E255D6B8F0040A94F /* HunnitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogApp.swift; sourceTree = "<group>"; };
 		635D7D20255D6B8F0040A94F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		562F6967256A728300C50C97 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				562F6968256A729600C50C97 /* CustomColor.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		635D7D12255D6B8F0040A94F = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +113,14 @@
 		635D7D1D255D6B8F0040A94F /* HunnitLog */ = {
 			isa = PBXGroup;
 			children = (
+				562F6967256A728300C50C97 /* Resource */,
 				E0B9146A2561581000F93987 /* Service */,
 				E0B9147A2561587900F93987 /* Model */,
 				E0B9149A256158DF00F93987 /* View */,
 				E0B9149B256158E300F93987 /* ViewModel */,
 				635D7D1E255D6B8F0040A94F /* HunnitLogApp.swift */,
 				635D7D22255D6B910040A94F /* Assets.xcassets */,
+				562F6953256A721600C50C97 /* Colors.xcassets */,
 				635D7D27255D6B910040A94F /* Info.plist */,
 				635D7D24255D6B910040A94F /* Preview Content */,
 			);
@@ -282,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562F6954256A721600C50C97 /* Colors.xcassets in Resources */,
 				635D7D26255D6B910040A94F /* Preview Assets.xcassets in Resources */,
 				635D7D23255D6B910040A94F /* Assets.xcassets in Resources */,
 			);
@@ -310,6 +325,7 @@
 			files = (
 				E0B91481256158AA00F93987 /* Tracker.swift in Sources */,
 				E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */,
+				562F6969256A729600C50C97 /* CustomColor.swift in Sources */,
 				635D7D21255D6B8F0040A94F /* ContentView.swift in Sources */,
 				E0B91482256158AA00F93987 /* APIService.swift in Sources */,
 				635D7D1F255D6B8F0040A94F /* HunnitLogApp.swift in Sources */,
