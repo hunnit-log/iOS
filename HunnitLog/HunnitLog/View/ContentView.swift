@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  HunnitLog
 //
-//  Created by Kang, Su Jin (강수진) on 2020/11/12.
+//  Created by Kang, Su Jin (강수진) on 2020/11/20.
 //
 
 import SwiftUI
