@@ -22,6 +22,9 @@
 		6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D17225655C970007A926 /* Preview Assets.xcassets */; };
 		6391D17E25655C980007A926 /* HunnitLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D17D25655C980007A926 /* HunnitLogTests.swift */; };
 		6391D18925655C980007A926 /* HunnitLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D18825655C980007A926 /* HunnitLogUITests.swift */; };
+		63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF13256C193400257ED2 /* CustomAlert.swift */; };
+		63A4DF25256C1B0700257ED2 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */; };
+		63A4DF3D256C1B5600257ED2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF3C256C1B5600257ED2 /* View+Extension.swift */; };
 		E0B91481256158AA00F93987 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147E256158AA00F93987 /* Tracker.swift */; };
 		E0B91482256158AA00F93987 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147F256158AA00F93987 /* APIService.swift */; };
 		E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B91480256158AA00F93987 /* APIServiceError.swift */; };
@@ -66,6 +69,9 @@
 		6391D18425655C980007A926 /* HunnitLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunnitLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6391D18825655C980007A926 /* HunnitLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogUITests.swift; sourceTree = "<group>"; };
 		6391D18A25655C980007A926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A4DF13256C193400257ED2 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		63A4DF3C256C1B5600257ED2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		E0B9147E256158AA00F93987 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		E0B9147F256158AA00F93987 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E0B91480256158AA00F93987 /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 				562F697C256A7A8700C50C97 /* Colors.xcassets */,
 				6391D17425655C970007A926 /* Info.plist */,
 				6391D17125655C970007A926 /* Preview Content */,
+				63A4DF61256C258800257ED2 /* Utility */,
+				63A4DF44256C1CF200257ED2 /* Extension */,
 				E0B9146A2561581000F93987 /* Service */,
 				E0B9147A2561587900F93987 /* Model */,
 				E0B9149A256158DF00F93987 /* View */,
@@ -179,6 +187,31 @@
 				6391D18A25655C980007A926 /* Info.plist */,
 			);
 			path = HunnitLogUITests;
+			sourceTree = "<group>";
+		};
+		63A4DF44256C1CF200257ED2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63A4DF3C256C1B5600257ED2 /* View+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		63A4DF61256C258800257ED2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				63A4DF62256C258E00257ED2 /* CustomAlert */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		63A4DF62256C258E00257ED2 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				63A4DF13256C193400257ED2 /* CustomAlert.swift */,
+				63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */,
+			);
+			path = CustomAlert;
 			sourceTree = "<group>";
 		};
 		E0B9146A2561581000F93987 /* Service */ = {
@@ -354,9 +387,11 @@
 			files = (
 				632A10762566B9EB0085B126 /* AchievementRow.swift in Sources */,
 				632A106E2566B94C0085B126 /* ShadowCard.swift in Sources */,
+				63A4DF25256C1B0700257ED2 /* CustomAlertViewController.swift in Sources */,
 				630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */,
 				562F6978256A7A6D00C50C97 /* CustomColor.swift in Sources */,
 				630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */,
+				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
@@ -365,6 +400,7 @@
 				632A10B12566CF2B0085B126 /* ContentView.swift in Sources */,
 				E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */,
 				E0B91482256158AA00F93987 /* APIService.swift in Sources */,
+				63A4DF3D256C1B5600257ED2 /* View+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
