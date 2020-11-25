@@ -48,8 +48,7 @@ struct buttonBackGroundView: View {
     var body: some View {
         Rectangle()
             .fill(Color.white)
-            .cornerRadius(5)
-            .addRoundedBorder(CustomColor.gray, width: 0.4, cornerRadius: 5)
+            .makeRoundedWithBorder(CustomColor.gray, width: 0.4, cornerRadius: 5)
     }
 }
 

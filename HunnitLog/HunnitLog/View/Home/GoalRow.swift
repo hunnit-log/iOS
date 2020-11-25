@@ -39,7 +39,7 @@ struct GoalRow: View {
         .padding(.horizontal, 18)
         .padding(.vertical, 15)
         .background(Color.white)
-        .addRoundedBorder(CustomColor.gray, width:0.3, cornerRadius: 13)
+        .makeRoundedWithBorder(CustomColor.gray, width:0.3, cornerRadius: 13)
     }
 }
 

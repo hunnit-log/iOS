@@ -42,9 +42,9 @@ struct RoundedCorner: Shape {
     }
 }
 
-// MARK: - addRoundedBorder
+// MARK: - makeRoundedWithBorder
 extension View {
-    public func addRoundedBorder<S>(_ content: S, width: CGFloat = 1, cornerRadius: CGFloat) -> some View where S : ShapeStyle {
+    public func makeRoundedWithBorder<S>(_ content: S, width: CGFloat = 1, cornerRadius: CGFloat) -> some View where S : ShapeStyle {
         let roundedRect = RoundedRectangle(cornerRadius: cornerRadius)
         return clipShape(roundedRect)
              .overlay(roundedRect.strokeBorder(content, lineWidth: width))

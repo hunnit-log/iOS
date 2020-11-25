@@ -40,7 +40,7 @@ struct AchievedGoalRow: View {
         .padding(.horizontal, 18)
         .padding(.vertical, 15)
         .background(CustomColor.yellow)
-        .addRoundedBorder(CustomColor.gray, width:0.3, cornerRadius: 13)
+        .makeRoundedWithBorder(CustomColor.gray, width:0.3, cornerRadius: 13)
     }
 }
 
