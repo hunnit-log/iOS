@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RoundedBackground: View {
     var body: some View {
-        VStack{
+        VStack {
             Rectangle()
                 .fill(Color.white)
                 .frame(width: UIScreen.main.bounds.width)

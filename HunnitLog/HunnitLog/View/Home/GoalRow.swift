@@ -13,20 +13,20 @@ struct GoalRow: View {
     
     
     var body: some View {
-        HStack(spacing: 7){
+        HStack(spacing: 7) {
             Circle()
                 .stroke(CustomColor.gray, style: StrokeStyle(lineWidth: 1.5, lineCap: .round, lineJoin: .round, dash: [3,5]))
                 .frame(width: 47, height: 47)
                 .background(Circle().foregroundColor(CustomColor.bgColor))
                 .padding(.trailing, 10)
                 
-            VStack{
-                HStack{
+            VStack {
+                HStack {
                     Text(title)
                         .font(.system(size: 17))
                         Spacer()
                 }
-                HStack{
+                HStack {
                     Text("달성률 \(achievement)%")
                         .font(.system(size: 13))
                         .foregroundColor(CustomColor.coolGray)

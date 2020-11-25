@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DateSelectionVIew: View {
     var body: some View {
-        HStack{
+        HStack {
             Button(action: {
                 
             }, label: {
@@ -27,11 +27,11 @@ struct DateSelectionVIew: View {
             Button(action: dosth){
                 Text("편집")
             }
-            .buttonStyle(homeButtonStyle())
+            .buttonStyle(homeButtonStyle(horizontalPadding: 10))
             Button(action: dosth){
                 Text("점수입력")
             }
-            .buttonStyle(homeButtonStyle())
+            .buttonStyle(homeButtonStyle(horizontalPadding: 6))
         }
         .padding(.horizontal, 33)
     }
@@ -44,7 +44,7 @@ func dosth(){
 }
 
 
-struct buttonBackGroundView: View{
+struct buttonBackGroundView: View {
     var body: some View {
         Rectangle()
             .fill(Color.white)
@@ -53,11 +53,12 @@ struct buttonBackGroundView: View{
     }
 }
 
-struct homeButtonStyle: ButtonStyle{
+struct homeButtonStyle: ButtonStyle {
+    var horizontalPadding: Int
     func makeBody(configuration: Configuration) -> some View {
             configuration.label
                 .font(.system(size: 12))
-                .padding(.horizontal, 6)
+                .padding(.horizontal, CGFloat(horizontalPadding))
                 .padding(.vertical, 5)
                 .foregroundColor(CustomColor.darkGray)
                 .background(buttonBackGroundView())

@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ProgressBar: View{
+struct ProgressBar: View {
     @State private var progressValue = 25.0
     @State private var progressTotal = 100.0
     
     var body: some View {
-        VStack{
+        VStack {
             Text("D-78")
                 .font(.system(size: 30))
                 .fontWeight(.semibold)
@@ -26,7 +26,7 @@ struct ProgressBar: View{
                 .padding(.horizontal, 33)
                 .padding(.top, 27)
                 .progressViewStyle(HoneyBeeProgressViewStyle(value: $progressValue, total: $progressTotal))
-            HStack{
+            HStack {
                 Text("조금만 더 힘내요! 현재 25% 달성했어요.")
                     .font(.system(size: 13))
                 Spacer()
@@ -43,8 +43,8 @@ struct HoneyBeeProgressViewStyle: ProgressViewStyle {
     func makeBody(configuration: Configuration) -> some View {
         let offset = CGFloat(value) / 100
         return GeometryReader{ geometry in
-            VStack(spacing:0){
-                HStack{
+            VStack(spacing:0) {
+                HStack {
                     Text("🐝")
                         .font(.system(size: 21))
                         .scaleEffect(x: -1, y: 1, anchor: .center)

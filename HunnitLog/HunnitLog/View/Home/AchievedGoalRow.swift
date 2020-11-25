@@ -12,8 +12,8 @@ struct AchievedGoalRow: View {
     let achievement: Int
     
     var body: some View {
-        HStack(spacing: 7){
-            ZStack{
+        HStack(spacing: 7) {
+            ZStack {
                 Circle()
                     .fill(Color.white)
                     .frame(width: 47, height: 47)
@@ -21,13 +21,13 @@ struct AchievedGoalRow: View {
                     .font(.system(size: 22))
             }
             .padding(.trailing, 10)
-            VStack{
-                HStack{
+            VStack {
+                HStack {
                     Text(title)
                         .font(.system(size: 17))
                         Spacer()
                 }
-                HStack{
+                HStack {
                     Text("달성률 \(achievement)%")
                         .font(.system(size: 13))
                         .foregroundColor(CustomColor.coolGray)
