@@ -13,6 +13,7 @@
 		562F6997256EC04800C50C97 /* RoundedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F6996256EC04800C50C97 /* RoundedBackground.swift */; };
 		562F69A4256EC24800C50C97 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69A3256EC24800C50C97 /* ProgressBar.swift */; };
 		562F69A9256ECA0E00C50C97 /* DateSelectionVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69A8256ECA0E00C50C97 /* DateSelectionVIew.swift */; };
+		562F69B3256ECC3A00C50C97 /* GoalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69B2256ECC3A00C50C97 /* GoalRow.swift */; };
 		630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */; };
 		630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD212566A38700CDFA50 /* RetrospectRow.swift */; };
 		630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD2E2566A5F300CDFA50 /* MonthFlagRow.swift */; };
@@ -59,6 +60,7 @@
 		562F6996256EC04800C50C97 /* RoundedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackground.swift; sourceTree = "<group>"; };
 		562F69A3256EC24800C50C97 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		562F69A8256ECA0E00C50C97 /* DateSelectionVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionVIew.swift; sourceTree = "<group>"; };
+		562F69B2256ECC3A00C50C97 /* GoalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRow.swift; sourceTree = "<group>"; };
 		630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfableGrayLine.swift; sourceTree = "<group>"; };
 		630EBD212566A38700CDFA50 /* RetrospectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectRow.swift; sourceTree = "<group>"; };
 		630EBD2E2566A5F300CDFA50 /* MonthFlagRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthFlagRow.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				562F6996256EC04800C50C97 /* RoundedBackground.swift */,
 				562F69A3256EC24800C50C97 /* ProgressBar.swift */,
 				562F69A8256ECA0E00C50C97 /* DateSelectionVIew.swift */,
+				562F69B2256ECC3A00C50C97 /* GoalRow.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562F69B3256ECC3A00C50C97 /* GoalRow.swift in Sources */,
 				E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */,
 				632A10762566B9EB0085B126 /* AchievementRow.swift in Sources */,
 				632A106E2566B94C0085B126 /* ShadowCard.swift in Sources */,
