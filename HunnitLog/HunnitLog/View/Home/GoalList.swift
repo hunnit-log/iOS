@@ -10,27 +10,27 @@ import SwiftUI
 struct GoalList: View {
     // MARK: - 더미데이터
     @State private var goals = [
-        goal(title: "올해 안에 연애하기라랄ㄹ라 라라아아아아아아아아", achievement: 25),
-        goal(title: "운전면허증 따기", achievement: 25),
-        goal(title: "토익 900점 찍기", achievement: 20),
-        goal(title: "올해 안에 연애하기라랄ㄹ라 라라아아아아아아아아", achievement: 30)
+        Goal(title: "올해 안에 연애하기라랄ㄹ라 라라아아아아아아아아", achievement: 25),
+        Goal(title: "운전면허증 따기", achievement: 25),
+        Goal(title: "토익 900점 찍기", achievement: 20),
+        Goal(title: "올해 안에 연애하기라랄ㄹ라 라라아아아아아아아아", achievement: 30)
     ]
     
     @State private var achievedGoals = [
-        achievedGoal(title: "올해 안에 연애하기라랄ㄹ라 라라아아아아아아아아", achievement: 100),
-        achievedGoal(title: "토익 900점 찍기", achievement: 100),
-        achievedGoal(title: "올해 안에 연애하기라랄ㄹ라 라라아아아아아아아아", achievement: 100)
+        AchievedGoal(title: "올해 안에 연애하기라랄ㄹ라 라라아아아아아아아아", achievement: 100),
+        AchievedGoal(title: "토익 900점 찍기", achievement: 100),
+        AchievedGoal(title: "올해 안에 연애하기라랄ㄹ라 라라아아아아아아아아", achievement: 100)
     ]
     
     // MARK: - body
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(goals, id:\.self) { obj in
-                    GoalRow(title: obj.title, achievement: obj.achievement)
+                ForEach(goals, id:\.self) { goal in
+                    GoalRow(title: goal.title, achievement: goal.achievement)
                 }
-                ForEach(achievedGoals, id:\.self) { obj in
-                    AchievedGoalRow(title: obj.title, achievement: obj.achievement)
+                ForEach(achievedGoals, id:\.self) { goal in
+                    AchievedGoalRow(title: goal.title, achievement: goal.achievement)
                 }
             }
         }
@@ -39,13 +39,13 @@ struct GoalList: View {
 }
 
 // MARK: - 더미데이터 구조체
-struct goal: Hashable {
+struct Goal: Hashable {
     var title = ""
     var achievement = 0
     var id = UUID()
 }
 
-struct achievedGoal: Hashable {
+struct AchievedGoal: Hashable {
     var title = ""
     var achievement = 0
     var id = UUID()
