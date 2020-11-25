@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		562F6978256A7A6D00C50C97 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F6977256A7A6D00C50C97 /* CustomColor.swift */; };
 		562F697D256A7A8700C50C97 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562F697C256A7A8700C50C97 /* Colors.xcassets */; };
+		562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F698E256EBFAE00C50C97 /* HomeView.swift */; };
 		562F6997256EC04800C50C97 /* RoundedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F6996256EC04800C50C97 /* RoundedBackground.swift */; };
 		562F69A4256EC24800C50C97 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69A3256EC24800C50C97 /* ProgressBar.swift */; };
 		630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		562F6977256A7A6D00C50C97 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		562F697C256A7A8700C50C97 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = HunnitLog/Colors.xcassets; sourceTree = SOURCE_ROOT; };
+		562F698E256EBFAE00C50C97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		562F6996256EC04800C50C97 /* RoundedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackground.swift; sourceTree = "<group>"; };
 		562F69A3256EC24800C50C97 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfableGrayLine.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		562F698D256EBF8400C50C97 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				562F698E256EBFAE00C50C97 /* HomeView.swift */,
 				562F6996256EC04800C50C97 /* RoundedBackground.swift */,
 				562F69A3256EC24800C50C97 /* ProgressBar.swift */,
 			);
@@ -411,6 +414,7 @@
 				630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */,
 				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
+				562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */,
 				562F6997256EC04800C50C97 /* RoundedBackground.swift in Sources */,
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
