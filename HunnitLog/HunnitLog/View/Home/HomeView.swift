@@ -20,6 +20,8 @@ struct HomeView: View {
                 }
                 .frame(width: UIScreen.main.bounds.width, height: 250)
                 .edgesIgnoringSafeArea(.top)
+                DateSelectionVIew()
+                GoalList()
             }
         }
     }
