@@ -29,6 +29,7 @@
 		63A4DF25256C1B0700257ED2 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */; };
 		63A4DF3D256C1B5600257ED2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF3C256C1B5600257ED2 /* View+Extension.swift */; };
 		E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */; };
+		E09B973925711196004C882D /* AchievementSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B973825711196004C882D /* AchievementSetupView.swift */; };
 		E0B91481256158AA00F93987 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147E256158AA00F93987 /* Tracker.swift */; };
 		E0B91482256158AA00F93987 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147F256158AA00F93987 /* APIService.swift */; };
 		E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B91480256158AA00F93987 /* APIServiceError.swift */; };
@@ -80,6 +81,7 @@
 		63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		63A4DF3C256C1B5600257ED2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordButton.swift; sourceTree = "<group>"; };
+		E09B973825711196004C882D /* AchievementSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSetupView.swift; sourceTree = "<group>"; };
 		E0B9147E256158AA00F93987 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		E0B9147F256158AA00F93987 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E0B91480256158AA00F93987 /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
@@ -232,6 +234,14 @@
 			path = CustomAlert;
 			sourceTree = "<group>";
 		};
+		E09B973725711177004C882D /* AchievementSetup */ = {
+			isa = PBXGroup;
+			children = (
+				E09B973825711196004C882D /* AchievementSetupView.swift */,
+			);
+			path = AchievementSetup;
+			sourceTree = "<group>";
+		};
 		E0B9146A2561581000F93987 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +270,7 @@
 		E0B9149A256158DF00F93987 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E09B973725711177004C882D /* AchievementSetup */,
 				562F698D256EBF8400C50C97 /* Home */,
 				630EBCCE256682D600CDFA50 /* Resropect */,
 				632A10B02566CF2B0085B126 /* ContentView.swift */,
@@ -415,6 +426,7 @@
 				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
 				562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */,
+				E09B973925711196004C882D /* AchievementSetupView.swift in Sources */,
 				562F6997256EC04800C50C97 /* RoundedBackground.swift in Sources */,
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
