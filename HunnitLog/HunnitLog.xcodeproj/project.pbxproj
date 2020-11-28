@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		562F6978256A7A6D00C50C97 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F6977256A7A6D00C50C97 /* CustomColor.swift */; };
 		562F697D256A7A8700C50C97 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562F697C256A7A8700C50C97 /* Colors.xcassets */; };
+		562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F698E256EBFAE00C50C97 /* HomeView.swift */; };
+		562F6997256EC04800C50C97 /* RoundedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F6996256EC04800C50C97 /* RoundedBackground.swift */; };
+		562F69A4256EC24800C50C97 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69A3256EC24800C50C97 /* ProgressBar.swift */; };
 		630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */; };
 		630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD212566A38700CDFA50 /* RetrospectRow.swift */; };
 		630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD2E2566A5F300CDFA50 /* MonthFlagRow.swift */; };
@@ -30,6 +33,7 @@
 		63A4DF3D256C1B5600257ED2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF3C256C1B5600257ED2 /* View+Extension.swift */; };
 		63F09B49256E9E5A00EB9101 /* AchievementRateModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */; };
 		E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */; };
+		E09B973925711196004C882D /* AchievementSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B973825711196004C882D /* AchievementSetupView.swift */; };
 		E0B91481256158AA00F93987 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147E256158AA00F93987 /* Tracker.swift */; };
 		E0B91482256158AA00F93987 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147F256158AA00F93987 /* APIService.swift */; };
 		E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B91480256158AA00F93987 /* APIServiceError.swift */; };
@@ -55,6 +59,9 @@
 /* Begin PBXFileReference section */
 		562F6977256A7A6D00C50C97 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		562F697C256A7A8700C50C97 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = HunnitLog/Colors.xcassets; sourceTree = SOURCE_ROOT; };
+		562F698E256EBFAE00C50C97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		562F6996256EC04800C50C97 /* RoundedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackground.swift; sourceTree = "<group>"; };
+		562F69A3256EC24800C50C97 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfableGrayLine.swift; sourceTree = "<group>"; };
 		630EBD212566A38700CDFA50 /* RetrospectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectRow.swift; sourceTree = "<group>"; };
 		630EBD2E2566A5F300CDFA50 /* MonthFlagRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthFlagRow.swift; sourceTree = "<group>"; };
@@ -82,6 +89,7 @@
 		63A4DF3C256C1B5600257ED2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementRateModalView.swift; sourceTree = "<group>"; };
 		E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordButton.swift; sourceTree = "<group>"; };
+		E09B973825711196004C882D /* AchievementSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSetupView.swift; sourceTree = "<group>"; };
 		E0B9147E256158AA00F93987 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		E0B9147F256158AA00F93987 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E0B91480256158AA00F93987 /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
@@ -118,6 +126,16 @@
 				562F6977256A7A6D00C50C97 /* CustomColor.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		562F698D256EBF8400C50C97 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				562F698E256EBFAE00C50C97 /* HomeView.swift */,
+				562F6996256EC04800C50C97 /* RoundedBackground.swift */,
+				562F69A3256EC24800C50C97 /* ProgressBar.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		630EBCCE256682D600CDFA50 /* Resropect */ = {
@@ -235,6 +253,14 @@
 			path = AchievementModal;
 			sourceTree = "<group>";
 		};
+		E09B973725711177004C882D /* AchievementSetup */ = {
+			isa = PBXGroup;
+			children = (
+				E09B973825711196004C882D /* AchievementSetupView.swift */,
+			);
+			path = AchievementSetup;
+			sourceTree = "<group>";
+		};
 		E0B9146A2561581000F93987 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				63A4DF62256C258E00257ED2 /* CustomAlert */,
+				E09B973725711177004C882D /* AchievementSetup */,
+				562F698D256EBF8400C50C97 /* Home */,
 				630EBCCE256682D600CDFA50 /* Resropect */,
 				632A10B02566CF2B0085B126 /* ContentView.swift */,
 				E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */,
@@ -418,6 +446,9 @@
 				630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */,
 				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
+				562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */,
+				E09B973925711196004C882D /* AchievementSetupView.swift in Sources */,
+				562F6997256EC04800C50C97 /* RoundedBackground.swift in Sources */,
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
 				632A10832566BDCB0085B126 /* CardContentable.swift in Sources */,
@@ -428,6 +459,7 @@
 				E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */,
 				E0B91482256158AA00F93987 /* APIService.swift in Sources */,
 				635D5F63257285C500FEB3EF /* AchievementModalPercentageView.swift in Sources */,
+				562F69A4256EC24800C50C97 /* ProgressBar.swift in Sources */,
 				63A4DF3D256C1B5600257ED2 /* View+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
