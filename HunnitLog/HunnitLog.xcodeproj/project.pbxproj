@@ -17,6 +17,7 @@
 		632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A107D2566BCDB0085B126 /* RetrospectView.swift */; };
 		632A10832566BDCB0085B126 /* CardContentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A10822566BDCB0085B126 /* CardContentable.swift */; };
 		632A10B12566CF2B0085B126 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A10B02566CF2B0085B126 /* ContentView.swift */; };
+		635D5F5B25727FD500FEB3EF /* AchievementModalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D5F5A25727FD500FEB3EF /* AchievementModalHeader.swift */; };
 		6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16B25655C960007A926 /* HunnitLogApp.swift */; };
 		6391D17025655C970007A926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D16F25655C970007A926 /* Assets.xcassets */; };
 		6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D17225655C970007A926 /* Preview Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		632A107D2566BCDB0085B126 /* RetrospectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectView.swift; sourceTree = "<group>"; };
 		632A10822566BDCB0085B126 /* CardContentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentable.swift; sourceTree = "<group>"; };
 		632A10B02566CF2B0085B126 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		635D5F5A25727FD500FEB3EF /* AchievementModalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModalHeader.swift; sourceTree = "<group>"; };
 		6391D16825655C960007A926 /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6391D16B25655C960007A926 /* HunnitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogApp.swift; sourceTree = "<group>"; };
 		6391D16F25655C970007A926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				632A10752566B9EB0085B126 /* AchievementRow.swift */,
 				630EBD2E2566A5F300CDFA50 /* MonthFlagRow.swift */,
 				632A107D2566BCDB0085B126 /* RetrospectView.swift */,
+				63A4DF9C256E9B9D00257ED2 /* AchievementModal */,
 			);
 			path = Resropect;
 			sourceTree = "<group>";
@@ -214,6 +217,14 @@
 				63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */,
 			);
 			path = CustomAlert;
+			sourceTree = "<group>";
+		};
+		63A4DF9C256E9B9D00257ED2 /* AchievementModal */ = {
+			isa = PBXGroup;
+			children = (
+				635D5F5A25727FD500FEB3EF /* AchievementModalHeader.swift */,
+			);
+			path = AchievementModal;
 			sourceTree = "<group>";
 		};
 		E0B9146A2561581000F93987 /* Service */ = {
@@ -400,6 +411,7 @@
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
 				632A10832566BDCB0085B126 /* CardContentable.swift in Sources */,
+				635D5F5B25727FD500FEB3EF /* AchievementModalHeader.swift in Sources */,
 				E0B91481256158AA00F93987 /* Tracker.swift in Sources */,
 				632A10B12566CF2B0085B126 /* ContentView.swift in Sources */,
 				E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */,
