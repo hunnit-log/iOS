@@ -9,10 +9,16 @@ import SwiftUI
 
 struct AchievementRow<Content: CardContentable>: View {
     var content: Content
+    @State var isShowingSheet = false
     
     var body: some View {
         ShadowCard(ratio: 309/72, content: content)
            .padding(.vertical, 12)
-        
+            .onTapGesture {
+                isShowingSheet = true
+            }
+            .sheet(isPresented: $isShowingSheet) {
+                AchievementRateModalView()
+            }
     }
 }
