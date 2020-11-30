@@ -33,7 +33,15 @@
 		63A4DF25256C1B0700257ED2 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */; };
 		63A4DF3D256C1B5600257ED2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF3C256C1B5600257ED2 /* View+Extension.swift */; };
 		E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */; };
+		E051ABAE257B5CCB00E06D52 /* AchievementQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E051ABAD257B5CCB00E06D52 /* AchievementQuestionView.swift */; };
+		E05859792574A05A00F5AE0C /* AchievementDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05859782574A05A00F5AE0C /* AchievementDateView.swift */; };
+		E058597E2575CF6F00F5AE0C /* AchievementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E058597D2575CF6F00F5AE0C /* AchievementListView.swift */; };
 		E09B973925711196004C882D /* AchievementSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B973825711196004C882D /* AchievementSetupView.swift */; };
+		E0B1886C2576592D003DF180 /* AchievementItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B1886B2576592D003DF180 /* AchievementItemViewModel.swift */; };
+		E0B18872257659BC003DF180 /* AchievementItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B18871257659BC003DF180 /* AchievementItemView.swift */; };
+		E0B1887D25765B71003DF180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B1887C25765B71003DF180 /* Images.xcassets */; };
+		E0B18882257662C0003DF180 /* RetrospectQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B18881257662C0003DF180 /* RetrospectQuestionView.swift */; };
+		E0B18887257662CE003DF180 /* RetrospectQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B18886257662CE003DF180 /* RetrospectQuestionViewModel.swift */; };
 		E0B91481256158AA00F93987 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147E256158AA00F93987 /* Tracker.swift */; };
 		E0B91482256158AA00F93987 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147F256158AA00F93987 /* APIService.swift */; };
 		E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B91480256158AA00F93987 /* APIServiceError.swift */; };
@@ -89,7 +97,15 @@
 		63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		63A4DF3C256C1B5600257ED2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordButton.swift; sourceTree = "<group>"; };
+		E051ABAD257B5CCB00E06D52 /* AchievementQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementQuestionView.swift; sourceTree = "<group>"; };
+		E05859782574A05A00F5AE0C /* AchievementDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDateView.swift; sourceTree = "<group>"; };
+		E058597D2575CF6F00F5AE0C /* AchievementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementListView.swift; sourceTree = "<group>"; };
 		E09B973825711196004C882D /* AchievementSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSetupView.swift; sourceTree = "<group>"; };
+		E0B1886B2576592D003DF180 /* AchievementItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementItemViewModel.swift; sourceTree = "<group>"; };
+		E0B18871257659BC003DF180 /* AchievementItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementItemView.swift; sourceTree = "<group>"; };
+		E0B1887C25765B71003DF180 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0B18881257662C0003DF180 /* RetrospectQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectQuestionView.swift; sourceTree = "<group>"; };
+		E0B18886257662CE003DF180 /* RetrospectQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectQuestionViewModel.swift; sourceTree = "<group>"; };
 		E0B9147E256158AA00F93987 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		E0B9147F256158AA00F93987 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E0B91480256158AA00F93987 /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
@@ -182,6 +198,7 @@
 				562F6976256A7A5A00C50C97 /* Resource */,
 				6391D16B25655C960007A926 /* HunnitLogApp.swift */,
 				6391D16F25655C970007A926 /* Assets.xcassets */,
+				E0B1887C25765B71003DF180 /* Images.xcassets */,
 				562F697C256A7A8700C50C97 /* Colors.xcassets */,
 				6391D17425655C970007A926 /* Info.plist */,
 				6391D17125655C970007A926 /* Preview Content */,
@@ -250,6 +267,12 @@
 			isa = PBXGroup;
 			children = (
 				E09B973825711196004C882D /* AchievementSetupView.swift */,
+				E05859782574A05A00F5AE0C /* AchievementDateView.swift */,
+				E058597D2575CF6F00F5AE0C /* AchievementListView.swift */,
+				E051ABAD257B5CCB00E06D52 /* AchievementQuestionView.swift */,
+				E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */,
+				E0B18871257659BC003DF180 /* AchievementItemView.swift */,
+				E0B18881257662C0003DF180 /* RetrospectQuestionView.swift */,
 			);
 			path = AchievementSetup;
 			sourceTree = "<group>";
@@ -268,6 +291,8 @@
 		E0B9147A2561587900F93987 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E0B1886B2576592D003DF180 /* AchievementItemViewModel.swift */,
+				E0B18886257662CE003DF180 /* RetrospectQuestionViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,7 +311,6 @@
 				562F698D256EBF8400C50C97 /* Home */,
 				630EBCCE256682D600CDFA50 /* Resropect */,
 				632A10B02566CF2B0085B126 /* ContentView.swift */,
-				E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -402,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				562F697D256A7A8700C50C97 /* Colors.xcassets in Resources */,
+				E0B1887D25765B71003DF180 /* Images.xcassets in Resources */,
 				6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */,
 				6391D17025655C970007A926 /* Assets.xcassets in Resources */,
 			);
@@ -428,6 +453,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E058597E2575CF6F00F5AE0C /* AchievementListView.swift in Sources */,
+				E0B18882257662C0003DF180 /* RetrospectQuestionView.swift in Sources */,
 				562F69B3256ECC3A00C50C97 /* GoalRow.swift in Sources */,
 				E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */,
 				632A10762566B9EB0085B126 /* AchievementRow.swift in Sources */,
@@ -439,17 +466,22 @@
 				562F69A9256ECA0E00C50C97 /* DateSelectionVIew.swift in Sources */,
 				630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */,
 				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
+				E0B1886C2576592D003DF180 /* AchievementItemViewModel.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
 				562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */,
 				E09B973925711196004C882D /* AchievementSetupView.swift in Sources */,
 				562F6997256EC04800C50C97 /* RoundedBackground.swift in Sources */,
+				E0B18872257659BC003DF180 /* AchievementItemView.swift in Sources */,
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
+				E051ABAE257B5CCB00E06D52 /* AchievementQuestionView.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
 				562F69BB256ECCC400C50C97 /* GoalList.swift in Sources */,
 				632A10832566BDCB0085B126 /* CardContentable.swift in Sources */,
 				E0B91481256158AA00F93987 /* Tracker.swift in Sources */,
 				632A10B12566CF2B0085B126 /* ContentView.swift in Sources */,
 				E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */,
+				E0B18887257662CE003DF180 /* RetrospectQuestionViewModel.swift in Sources */,
+				E05859792574A05A00F5AE0C /* AchievementDateView.swift in Sources */,
 				E0B91482256158AA00F93987 /* APIService.swift in Sources */,
 				562F69A4256EC24800C50C97 /* ProgressBar.swift in Sources */,
 				63A4DF3D256C1B5600257ED2 /* View+Extension.swift in Sources */,

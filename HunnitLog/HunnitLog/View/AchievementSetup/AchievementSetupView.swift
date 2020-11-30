@@ -10,13 +10,19 @@ import SwiftUI
 struct AchievementSetupView: View {
     private enum Constants {
         static let nextButtonTitle: String = "다음"
-        static let nextButtonHeight: CGFloat = 93
+        static let nextButtonHeight: CGFloat = 57
         static let nextButtonFont: Font = .system(size: 18, weight: .medium)
         static let nextButtonLineSpaceing: CGFloat = -0.54
     }
     
-    let buttonAction: (() -> Void) = {
-        // TODO: - 버튼 액션 추가
+    @State var isLinkActive: Bool = false
+    @State var isNextButtonDisabled: Bool = false // TODO - 하위 뷰들에게 넘겨서 하위뷰에서 버튼 활성화 여부 판단하도록
+    
+    init() {
+        let navigationAppearance = UINavigationBarAppearance()
+        navigationAppearance.backgroundColor = .white
+        navigationAppearance.shadowColor = .clear
+        UINavigationBar.appearance().standardAppearance = navigationAppearance
     }
     
     var body: some View {
@@ -24,12 +30,23 @@ struct AchievementSetupView: View {
             ZStack(alignment: .bottom) {
                 // MARK: - Navigation View
                 NavigationView {
-                    // TODO: - 여기 뷰 구성
-                    Text("Hello World")
-                }.padding(.bottom, Constants.nextButtonHeight + geometry.safeAreaInsets.bottom)
+                    AchievementDateView()
+                        .background(
+                            NavigationLink(
+                                destination: AchievementListView(),
+                                isActive: $isLinkActive,
+                                label: {
+                                    EmptyView()
+                                })
+                                .navigationBarTitle("", displayMode: .inline)
+                                .hidden())
+                }
+                .padding(.bottom, Constants.nextButtonHeight + geometry.safeAreaInsets.bottom)
                 
                 // MARK: - Bottom Button
-                Button(action: self.buttonAction) {
+                Button(action: {
+                    self.isLinkActive = true
+                }) {
                     Text(Constants.nextButtonTitle)
                         .foregroundColor(CustomColor.black)
                         .font(Constants.nextButtonFont)
@@ -40,7 +57,8 @@ struct AchievementSetupView: View {
                        alignment: .center)
                 .padding(.bottom, geometry.safeAreaInsets.bottom)
                 .background(CustomColor.yellow)
-            }.edgesIgnoringSafeArea(.bottom)
+            }
+            .edgesIgnoringSafeArea(.bottom)
         })
     }
 }
