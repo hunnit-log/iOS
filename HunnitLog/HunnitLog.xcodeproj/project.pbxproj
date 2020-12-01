@@ -24,6 +24,7 @@
 		632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A107D2566BCDB0085B126 /* RetrospectView.swift */; };
 		632A10832566BDCB0085B126 /* CardContentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A10822566BDCB0085B126 /* CardContentable.swift */; };
 		632A10B12566CF2B0085B126 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A10B02566CF2B0085B126 /* ContentView.swift */; };
+		635D5FB5257531EF00FEB3EF /* Feeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D5FB4257531EF00FEB3EF /* Feeling.swift */; };
 		6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16B25655C960007A926 /* HunnitLogApp.swift */; };
 		6391D17025655C970007A926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D16F25655C970007A926 /* Assets.xcassets */; };
 		6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D17225655C970007A926 /* Preview Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		632A107D2566BCDB0085B126 /* RetrospectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectView.swift; sourceTree = "<group>"; };
 		632A10822566BDCB0085B126 /* CardContentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentable.swift; sourceTree = "<group>"; };
 		632A10B02566CF2B0085B126 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		635D5FB4257531EF00FEB3EF /* Feeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
 		6391D16825655C960007A926 /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6391D16B25655C960007A926 /* HunnitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogApp.swift; sourceTree = "<group>"; };
 		6391D16F25655C970007A926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 		E0B9149B256158E300F93987 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				635D5FB4257531EF00FEB3EF /* Feeling.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
 				562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */,
 				E09B973925711196004C882D /* AchievementSetupView.swift in Sources */,
+				635D5FB5257531EF00FEB3EF /* Feeling.swift in Sources */,
 				562F6997256EC04800C50C97 /* RoundedBackground.swift in Sources */,
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
