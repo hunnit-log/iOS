@@ -36,6 +36,7 @@
 		63CA19032579359F00CB2283 /* HunnitSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19022579359F00CB2283 /* HunnitSummary.swift */; };
 		63CA19082579362900CB2283 /* DetailAnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19072579362900CB2283 /* DetailAnswerRow.swift */; };
 		63CA190D2579379700CB2283 /* DetailSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA190C2579379700CB2283 /* DetailSummary.swift */; };
+		63CA19122579383E00CB2283 /* RetrospectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19112579383E00CB2283 /* RetrospectDetailView.swift */; };
 		E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */; };
 		E09B973925711196004C882D /* AchievementSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B973825711196004C882D /* AchievementSetupView.swift */; };
 		E0B91481256158AA00F93987 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147E256158AA00F93987 /* Tracker.swift */; };
@@ -96,6 +97,7 @@
 		63CA19022579359F00CB2283 /* HunnitSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitSummary.swift; sourceTree = "<group>"; };
 		63CA19072579362900CB2283 /* DetailAnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnswerRow.swift; sourceTree = "<group>"; };
 		63CA190C2579379700CB2283 /* DetailSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSummary.swift; sourceTree = "<group>"; };
+		63CA19112579383E00CB2283 /* RetrospectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectDetailView.swift; sourceTree = "<group>"; };
 		E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordButton.swift; sourceTree = "<group>"; };
 		E09B973825711196004C882D /* AchievementSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSetupView.swift; sourceTree = "<group>"; };
 		E0B9147E256158AA00F93987 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				63CA19022579359F00CB2283 /* HunnitSummary.swift */,
 				63CA190C2579379700CB2283 /* DetailSummary.swift */,
 				63CA19072579362900CB2283 /* DetailAnswerRow.swift */,
+				63CA19112579383E00CB2283 /* RetrospectDetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				63CA190D2579379700CB2283 /* DetailSummary.swift in Sources */,
 				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
+				63CA19122579383E00CB2283 /* RetrospectDetailView.swift in Sources */,
 				562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */,
 				E09B973925711196004C882D /* AchievementSetupView.swift in Sources */,
 				635D5FB5257531EF00FEB3EF /* Feeling.swift in Sources */,
