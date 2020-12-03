@@ -34,6 +34,7 @@
 		63A4DF25256C1B0700257ED2 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */; };
 		63A4DF3D256C1B5600257ED2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A4DF3C256C1B5600257ED2 /* View+Extension.swift */; };
 		63CA19032579359F00CB2283 /* HunnitSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19022579359F00CB2283 /* HunnitSummary.swift */; };
+		63CA190D2579379700CB2283 /* DetailSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA190C2579379700CB2283 /* DetailSummary.swift */; };
 		E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */; };
 		E09B973925711196004C882D /* AchievementSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B973825711196004C882D /* AchievementSetupView.swift */; };
 		E0B91481256158AA00F93987 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9147E256158AA00F93987 /* Tracker.swift */; };
@@ -92,6 +93,7 @@
 		63A4DF24256C1B0700257ED2 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		63A4DF3C256C1B5600257ED2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		63CA19022579359F00CB2283 /* HunnitSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitSummary.swift; sourceTree = "<group>"; };
+		63CA190C2579379700CB2283 /* DetailSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSummary.swift; sourceTree = "<group>"; };
 		E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordButton.swift; sourceTree = "<group>"; };
 		E09B973825711196004C882D /* AchievementSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSetupView.swift; sourceTree = "<group>"; };
 		E0B9147E256158AA00F93987 /* Tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				63CA19022579359F00CB2283 /* HunnitSummary.swift */,
+				63CA190C2579379700CB2283 /* DetailSummary.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				562F69AE256ECBD400C50C97 /* AchievedGoalRow.swift in Sources */,
 				562F69A9256ECA0E00C50C97 /* DateSelectionVIew.swift in Sources */,
 				630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */,
+				63CA190D2579379700CB2283 /* DetailSummary.swift in Sources */,
 				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
 				562F698F256EBFAE00C50C97 /* HomeView.swift in Sources */,
