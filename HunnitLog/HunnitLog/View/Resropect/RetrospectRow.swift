@@ -50,8 +50,7 @@ fileprivate struct RetrospectCardFlag: View {
 fileprivate struct RetrospectCard<Content: CardContentable>: View {
     let content: Content
     var body: some View {
-        ShadowCard(ratio: 238/129, content: content)
-           .padding(.vertical, 14)
+        content.modifier(RatioShadowCard(ratioWidth: 238, ratioHeight: 129))
     }
 }
 
@@ -65,6 +64,25 @@ struct RetrospectRow<Content: CardContentable>: View {
         HStack(spacing: 0) {
             RetrospectCardFlag(lineType: lineType, date: date)
             RetrospectCard(content: content)
+                .padding(.vertical, 14)
+        }
+    }
+}
+
+struct RetrospectRow_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack(spacing: 0) {
+            RetrospectRow(lineType: .bottomHalf,
+                          date: ("12/29", "월요일"),
+                          content: ToBeWrittenContent())
+            RetrospectRow(lineType: .full,
+                          date: ("12/29", "월요일"),
+                          content: WrittenContent(period: "2020.10.21 - 2020.11.02",
+                                                  title: "다섯번째 회고록",
+                                                  achievementRate: 25))
+            RetrospectRow(lineType: .full,
+                          date: ("12/21", "월요일"),
+                          content: UnwrittenContent())
         }
     }
 }

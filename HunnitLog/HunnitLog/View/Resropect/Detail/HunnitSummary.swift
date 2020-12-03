@@ -38,14 +38,7 @@ struct HunnitSummary: ViewModifier {
         VStack(spacing: 0) {
             title
             content
-                .background(Rectangle()
-                                .fill(Color.white)
-                                .cornerRadius(Constants.backgroundCornerRadius)
-                                .shadow(color: Constants.backgroundShadowColor,
-                                        radius: Constants.backgroundShadowRadius,
-                                        x: 0.0,
-                                        y: 0.0))
-            
+                .modifier(ShadowCard())
         }
     }
 }

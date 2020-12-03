@@ -21,7 +21,7 @@ struct RetrospectView: View {
             List {
                 AchievementRow(content: AchievementContent(period: "2020. 11. 01 - 2020. 1. 29",
                                                            achievementRate: 89))
-
+                    .padding(.bottom, 26)
                     .padding(.horizontal, 33)
                     .listRowInsets(EdgeInsets())
 

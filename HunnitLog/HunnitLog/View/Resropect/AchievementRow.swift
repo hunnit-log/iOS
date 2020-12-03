@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct AchievementRow<Content: CardContentable>: View {
-    var content: Content
-    
+    let content: Content
     var body: some View {
-        ShadowCard(ratio: 309/72, content: content)
-           .padding(.vertical, 12)
-        
+        content
+            .modifier(ShadowCard())
     }
 }
