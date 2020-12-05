@@ -44,37 +44,37 @@ struct ScoreRow: View {
                         .fill(CustomColor.yellow)
                         .frame(width: Constants.circleDiameter, height: Constants.circleDiameter)
                         .padding(.trailing, Constants.trailing)
-                        
+                    
                     VStack(alignment: .leading) {
                         Text(title)
                             .font(Constants.titleFont)
                         Text("달성률 \(achievement)%")
-                                .font(Constants.achievementFont)
-                                .foregroundColor(CustomColor.coolGray)
+                            .font(Constants.achievementFont)
+                            .foregroundColor(CustomColor.coolGray)
                     }
                 }
                 
                 GeometryReader { geometry in
-                                   VStack {
-                                       HStack{
-                                           Emotion(rawValue: makeScore(sliderValue))?
-                                               .image
-                                               .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
-                                           Spacer()
-                                       }
-                                       Slider(value: $sliderValue, in: -5...5)
-                                       .accentColor(CustomColor.lightGray)
-                                   }
-                               }
-                               .frame(height: 70)
-                               HStack {
-                                   ForEach(Emotion.allCases) { emotion in
-                                       Text("\(emotion.rawValue)")
-                                       if emotion != .excellent {
-                                           Spacer()
-                                       }
-                                   }
-                               }
+                    VStack {
+                        HStack{
+                            Emotion(rawValue: makeScore(sliderValue))?
+                                .image
+                                .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
+                            Spacer()
+                        }
+                        Slider(value: $sliderValue, in: -5...5)
+                            .accentColor(CustomColor.lightGray)
+                    }
+                }
+                .frame(height: 70)
+                HStack {
+                    ForEach(Emotion.allCases) { emotion in
+                        Text("\(emotion.rawValue)")
+                        if emotion != .excellent {
+                            Spacer()
+                        }
+                    }
+                }
             }
         }
         .padding(.horizontal, Constants.horizontalPadding)
@@ -85,8 +85,8 @@ struct ScoreRow: View {
 }
 
 extension ScoreRow {
-// CaseIterable 은 아래서 Emotion.allCases 를 사용하기 위해 컨펌 해 주었습니다.
-// Identifiable 은 ForEach 에서 사용하기 위해 컨펌해주었고, 해당 프로토콜을 따르려면 id 변수를 정의해주어야합니다.
+    // CaseIterable 은 아래서 Emotion.allCases 를 사용하기 위해 컨펌 해 주었습니다.
+    // Identifiable 은 ForEach 에서 사용하기 위해 컨펌해주었고, 해당 프로토콜을 따르려면 id 변수를 정의해주어야합니다.
     private enum Emotion: Int, CaseIterable, Identifiable {
         case bad = -5
         case notbad = -3
