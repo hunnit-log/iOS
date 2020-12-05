@@ -59,13 +59,19 @@ struct RetrospectRow<Content: CardContentable>: View {
     var lineType: LineType
     var date: (monthDay: String, weekDay: String)
     var content: Content
-
     var body: some View {
         HStack(spacing: 0) {
             RetrospectCardFlag(lineType: lineType, date: date)
             RetrospectCard(content: content)
                 .padding(.vertical, 14)
-        }
+        }.background(
+            NavigationLink(
+                destination: RetrospectDetailView(),
+                label: {
+                    EmptyView()
+                })
+                .navigationBarTitle("")
+                .hidden())
     }
 }
 
