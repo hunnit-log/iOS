@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct AchievementRow<Content: CardContentable>: View {
-    var content: Content
     @State var isShowingSheet = false
     
+    let content: Content
     var body: some View {
-        ShadowCard(ratio: 309/72, content: content)
-           .padding(.vertical, 12)
+        content
+            .modifier(ShadowCard())
+            .padding(.top, 20)
+            .padding(.bottom, 26)
             .onTapGesture {
                 isShowingSheet = true
             }
