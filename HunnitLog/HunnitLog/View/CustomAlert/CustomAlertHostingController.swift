@@ -1,5 +1,5 @@
 //
-//  CustomAlertViewController.swift
+//  CustomAlertHostingController.swift
 //  HunnitLog
 //
 //  Created by Kang, Su Jin (강수진) on 2020/11/24.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 //alert를 present할 VC
-class CustomAlertViewController: UIHostingController<CustomAlert> {
+class CustomAlertHostingController: UIHostingController<CustomAlert> {
     
     private var customAlert: CustomAlert
     private var isPresented: Binding<Bool>
