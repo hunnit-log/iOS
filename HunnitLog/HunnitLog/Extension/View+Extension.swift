@@ -11,7 +11,7 @@ extension View {
     func customAlert(isPresented: Binding<Bool>, content: () -> CustomAlert) -> some View {
         if isPresented.wrappedValue {
             
-            let customAlertVC = CustomAlertViewController(view: content(), isPresented: isPresented)
+            let customAlertVC = CustomAlertHostingController(view: content(), isPresented: isPresented)
             customAlertVC.modalPresentationStyle = .overCurrentContext
             customAlertVC.view.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.25)
             customAlertVC.modalTransitionStyle = .crossDissolve

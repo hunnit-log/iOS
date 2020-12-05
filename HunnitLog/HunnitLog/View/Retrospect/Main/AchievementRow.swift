@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct AchievementRow<Content: CardContentable>: View {
+    @State var isShowingSheet = false
+    
     let content: Content
     var body: some View {
         content
             .modifier(ShadowCard())
             .padding(.top, 20)
             .padding(.bottom, 26)
+            .onTapGesture {
+                isShowingSheet = true
+            }
+            .sheet(isPresented: $isShowingSheet) {
+                AchievementRateModalView()
+            }
     }
 }
