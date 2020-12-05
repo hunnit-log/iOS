@@ -48,7 +48,7 @@ struct RetrospectDetailView: View {
                 Spacer(minLength: Constants.bottomSpacer)
             }
         }
-        .background(CustomColor.bgColor)
+        .background(CustomColor.bgColor.edgesIgnoringSafeArea(.bottom))
         .navigationBarTitle(navigationBarTitle, displayMode: .inline)
     }
 }

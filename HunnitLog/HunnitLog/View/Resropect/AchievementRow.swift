@@ -12,5 +12,7 @@ struct AchievementRow<Content: CardContentable>: View {
     var body: some View {
         content
             .modifier(ShadowCard())
+            .padding(.top, 20)
+            .padding(.bottom, 26)
     }
 }

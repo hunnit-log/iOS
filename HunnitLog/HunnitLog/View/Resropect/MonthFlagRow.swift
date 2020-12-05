@@ -15,13 +15,16 @@ struct MonthFlagRow: View {
         ZStack(alignment: .leading) {
             HalfableGrayLine(lineType: lineType)
                 .padding(.leading, 50)
-            Text(date)
-                .font(.system(size: 20))
-                .padding(.vertical, 5)
-                .padding(.horizontal, 11)
-                .background(Rectangle().fill(Color.yellow))
-                .cornerRadius(8)
-                .padding(.vertical, 15)
+            HStack {
+                Text(date)
+                    .font(.system(size: 20))
+                    .padding(.vertical, 5)
+                    .padding(.horizontal, 11)
+                    .background(Rectangle().fill(Color.yellow))
+                    .cornerRadius(8)
+                    .padding(.vertical, 15)
+                Spacer()
+            }
         }
     }
 }
