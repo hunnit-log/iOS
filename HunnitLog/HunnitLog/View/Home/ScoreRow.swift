@@ -11,7 +11,6 @@ struct ScoreRow: View {
     @State private var sliderValue: Double = 0
     
     let step: Double = 1
-    var roundedValue: Double
     
     let title: String
     let achievement: Int
@@ -38,8 +37,6 @@ struct ScoreRow: View {
     
     
     var body: some View {
-        let roundedValue = round(sliderValue/step)*step
-        
         HStack(spacing: 7) {
             VStack{
                 HStack{
@@ -58,44 +55,26 @@ struct ScoreRow: View {
                 }
                 
                 GeometryReader { geometry in
-                    VStack {
-                        HStack{
-                            
-                            switch roundedValue {
-                            case -5 ... -4:
-                                Image(Constants.badImageName)
-                                    .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
-                            case -3 ... -2:
-                                Image(Constants.notBadImageName)
-                                    .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
-                            case -1 ... 1:
-                                Image(Constants.sosoImageName)
-                                    .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
-                            case 2 ... 3:
-                                Image(Constants.greatImageName)
-                                    .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
-                            default:
-                                Image(Constants.excellentImageName)
-                                    .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
-                            }
-                            Spacer()
-                        }
-                        Slider(value: $sliderValue, in: -5...5)
-                        .accentColor(CustomColor.lightGray)
-                    }
-                }
-                .frame(height: 70)
-                HStack {
-                    Text("-5")
-                    Spacer()
-                    Text("-3")
-                    Spacer()
-                    Text("0")
-                    Spacer()
-                    Text("+3")
-                    Spacer()
-                    Text("+5")
-                }
+                                   VStack {
+                                       HStack{
+                                           Emotion(rawValue: makeScore(sliderValue))?
+                                               .image
+                                               .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
+                                           Spacer()
+                                       }
+                                       Slider(value: $sliderValue, in: -5...5)
+                                       .accentColor(CustomColor.lightGray)
+                                   }
+                               }
+                               .frame(height: 70)
+                               HStack {
+                                   ForEach(Emotion.allCases) { emotion in
+                                       Text("\(emotion.rawValue)")
+                                       if emotion != .excellent {
+                                           Spacer()
+                                       }
+                                   }
+                               }
             }
         }
         .padding(.horizontal, Constants.horizontalPadding)
@@ -105,8 +84,67 @@ struct ScoreRow: View {
     }
 }
 
+extension ScoreRow {
+// CaseIterable 은 아래서 Emotion.allCases 를 사용하기 위해 컨펌 해 주었습니다.
+// Identifiable 은 ForEach 에서 사용하기 위해 컨펌해주었고, 해당 프로토콜을 따르려면 id 변수를 정의해주어야합니다.
+    private enum Emotion: Int, CaseIterable, Identifiable {
+        case bad = -5
+        case notbad = -3
+        case soso = 0
+        case great = 3
+        case excellent = 5
+        
+        var image: Image? {
+            Image(self.imageName)
+        }
+        
+        var id: Int {
+            self.rawValue
+        }
+        
+        private var imageName: String {
+            switch self {
+            case .bad:
+                return "imgTextboxBad"
+            case .notbad:
+                return "imgTextboxNotbad"
+            case .soso:
+                return "imgTextboxSoso"
+            case .great:
+                return "imgTextboxGreat"
+            case .excellent:
+                return "imgTextboxExcellent"
+            }
+            
+        }
+    }
+    
+    
+    // MARK: makeScore - slider의 값을 정해진 점수로 보정해주는 함수입니다.
+    func makeScore(_ sliderValue: Double) -> Int {
+        let roundedValue = Int(round(sliderValue/step)*step)
+        var score: Int
+        if(roundedValue % 2 == 0 && roundedValue != 0){
+            if(roundedValue < 0){
+                score = roundedValue - 1
+            }else{
+                score = roundedValue + 1
+            }
+        }else if(abs(roundedValue) == 1){
+            return 0
+            
+        }else{
+            score = roundedValue
+            return score
+        }
+        
+        return score
+    }
+}
+
+
 struct ScoreRow_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreRow(roundedValue: 0, title: "목표제목입니다목표제목입니다목표제목입니다목표제목입니다목표제목입니다", achievement: 20)
+        ScoreRow(title: "목표제목입니다목표제목입니다목표제목입니다목표제목입니다목표제목입니다", achievement: 20)
     }
 }
