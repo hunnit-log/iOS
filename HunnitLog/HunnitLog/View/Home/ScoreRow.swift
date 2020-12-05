@@ -10,8 +10,6 @@ import SwiftUI
 struct ScoreRow: View {
     @State private var sliderValue: Double = 0
     
-    let step: Double = 1
-    
     let title: String
     let achievement: Int
     
@@ -122,7 +120,7 @@ extension ScoreRow {
     
     // MARK: makeScore - slider의 값을 정해진 점수로 보정해주는 함수입니다.
     func makeScore(_ sliderValue: Double) -> Int {
-        let roundedValue = Int(round(sliderValue/step)*step)
+        let roundedValue = Int(round(sliderValue))
         var score: Int
         if(roundedValue % 2 == 0 && roundedValue != 0) {
             if(roundedValue < 0){
