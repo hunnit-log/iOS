@@ -40,6 +40,7 @@
 		63CA19082579362900CB2283 /* DetailAnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19072579362900CB2283 /* DetailAnswerRow.swift */; };
 		63CA190D2579379700CB2283 /* DetailSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA190C2579379700CB2283 /* DetailSummary.swift */; };
 		63CA19122579383E00CB2283 /* RetrospectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19112579383E00CB2283 /* RetrospectDetailView.swift */; };
+		63CA193A257BC5E300CB2283 /* BottomNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA1939257BC5E300CB2283 /* BottomNextButton.swift */; };
 		63F09B49256E9E5A00EB9101 /* AchievementRateModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */; };
 		E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */; };
 		E09B973925711196004C882D /* AchievementSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B973825711196004C882D /* AchievementSetupView.swift */; };
@@ -105,6 +106,7 @@
 		63CA19072579362900CB2283 /* DetailAnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnswerRow.swift; sourceTree = "<group>"; };
 		63CA190C2579379700CB2283 /* DetailSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSummary.swift; sourceTree = "<group>"; };
 		63CA19112579383E00CB2283 /* RetrospectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectDetailView.swift; sourceTree = "<group>"; };
+		63CA1939257BC5E300CB2283 /* BottomNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNextButton.swift; sourceTree = "<group>"; };
 		63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementRateModalView.swift; sourceTree = "<group>"; };
 		E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordButton.swift; sourceTree = "<group>"; };
 		E09B973825711196004C882D /* AchievementSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSetupView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				635D5F942572968D00FEB3EF /* Detail */,
 				635D5F7E2572924A00FEB3EF /* Main */,
 				63A4DF9C256E9B9D00257ED2 /* AchievementModal */,
+				63CA192E257BADF300CB2283 /* Write */,
 			);
 			path = Retrospect;
 			sourceTree = "<group>";
@@ -285,6 +288,14 @@
 				63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */,
 			);
 			path = AchievementModal;
+			sourceTree = "<group>";
+		};
+		63CA192E257BADF300CB2283 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				63CA1939257BC5E300CB2283 /* BottomNextButton.swift */,
+			);
+			path = Write;
 			sourceTree = "<group>";
 		};
 		E09B973725711177004C882D /* AchievementSetup */ = {
@@ -495,6 +506,7 @@
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
 				562F69BB256ECCC400C50C97 /* GoalList.swift in Sources */,
 				632A10832566BDCB0085B126 /* CardContentable.swift in Sources */,
+				63CA193A257BC5E300CB2283 /* BottomNextButton.swift in Sources */,
 				63F09B49256E9E5A00EB9101 /* AchievementRateModalView.swift in Sources */,
 				635D5F5B25727FD500FEB3EF /* AchievementModalHeader.swift in Sources */,
 				E0B91481256158AA00F93987 /* Tracker.swift in Sources */,
