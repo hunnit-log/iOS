@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "icCalendarNonNext.png",
+      "scale" : "1x",
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "icCalendarNonNext@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "icCalendarNonNext@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
