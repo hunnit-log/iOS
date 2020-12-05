@@ -10,16 +10,18 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        ZStack{
+        ZStack {
             CustomColor.bgColor
-            VStack{
-                ZStack{
+            VStack {
+                ZStack {
                     CustomColor.bgColor
                     RoundedBackground()
                     ProgressBar()
                 }
                 .frame(width: UIScreen.main.bounds.width, height: 250)
                 .edgesIgnoringSafeArea(.top)
+                DateSelectionVIew()
+                GoalList()
             }
         }
     }
