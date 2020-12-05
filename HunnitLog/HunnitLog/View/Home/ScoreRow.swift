@@ -40,7 +40,7 @@ struct ScoreRow: View {
     var body: some View {
         let roundedValue = round(sliderValue/step)*step
         
-        HStack(spacing: 7){
+        HStack(spacing: 7) {
             VStack{
                 HStack{
                     Circle()
@@ -48,18 +48,12 @@ struct ScoreRow: View {
                         .frame(width: Constants.circleRadius, height: Constants.circleRadius)
                         .padding(.trailing, Constants.trailing)
                         
-                    VStack{
-                        HStack{
-                            Text(title)
-                                .font(Constants.titleFont)
-                                Spacer()
-                        }
-                        HStack{
-                            Text("달성률 \(achievement)%")
+                    VStack(alignment: .leading) {
+                        Text(title)
+                            .font(Constants.titleFont)
+                        Text("달성률 \(achievement)%")
                                 .font(Constants.achievementFont)
                                 .foregroundColor(CustomColor.coolGray)
-                            Spacer()
-                        }
                     }
                 }
                 
