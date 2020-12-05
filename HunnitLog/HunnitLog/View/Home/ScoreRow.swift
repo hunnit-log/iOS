@@ -38,8 +38,8 @@ struct ScoreRow: View {
     
     var body: some View {
         HStack(spacing: 7) {
-            VStack{
-                HStack{
+            VStack {
+                HStack {
                     Circle()
                         .fill(CustomColor.yellow)
                         .frame(width: Constants.circleDiameter, height: Constants.circleDiameter)
@@ -56,17 +56,17 @@ struct ScoreRow: View {
                 
                 GeometryReader { geometry in
                     VStack {
-                        HStack{
+                        HStack {
                             Emotion(rawValue: makeScore(sliderValue))?
                                 .image
                                 .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
                             Spacer()
                         }
-                        Slider(value: $sliderValue, in: -5...5)
-                            .accentColor(CustomColor.lightGray)
                     }
                 }
-                .frame(height: 70)
+                .frame(height: 32)
+                Slider(value: $sliderValue, in: -5...5)
+                    .accentColor(CustomColor.lightGray)
                 HStack {
                     ForEach(Emotion.allCases) { emotion in
                         Text("\(emotion.rawValue)")
@@ -124,16 +124,16 @@ extension ScoreRow {
     func makeScore(_ sliderValue: Double) -> Int {
         let roundedValue = Int(round(sliderValue/step)*step)
         var score: Int
-        if(roundedValue % 2 == 0 && roundedValue != 0){
+        if(roundedValue % 2 == 0 && roundedValue != 0) {
             if(roundedValue < 0){
                 score = roundedValue - 1
-            }else{
+            } else {
                 score = roundedValue + 1
             }
-        }else if(abs(roundedValue) == 1){
+        } else if(abs(roundedValue) == 1){
             return 0
             
-        }else{
+        } else {
             score = roundedValue
             return score
         }
