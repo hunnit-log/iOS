@@ -19,7 +19,7 @@ struct ScoreRow: View {
         static let horizontalPadding: CGFloat = 18
         static let verticalPadding: CGFloat = 15
         static let trailing: CGFloat = 10
-        static let circleRadius: CGFloat = 47
+        static let circleDiameter: CGFloat = 47
         static let titleFont: Font = .system(size: 17)
         static let achievementFont: Font = .system(size: 13)
         static let borderWidth: CGFloat = 0.3
@@ -42,7 +42,7 @@ struct ScoreRow: View {
                 HStack{
                     Circle()
                         .fill(CustomColor.yellow)
-                        .frame(width: Constants.circleRadius, height: Constants.circleRadius)
+                        .frame(width: Constants.circleDiameter, height: Constants.circleDiameter)
                         .padding(.trailing, Constants.trailing)
                         
                     VStack(alignment: .leading) {
