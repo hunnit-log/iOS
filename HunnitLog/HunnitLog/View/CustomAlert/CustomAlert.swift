@@ -23,8 +23,8 @@ struct CustomAlert: View {
         VStack {
             title
                 .padding(.bottom, 9)
-                .foregroundColor(Color.black)
-                .font(.system(size: 18))
+                .foregroundColor(CustomColor.black)
+                .font(.system(size: 18, weight: .medium))
             
             message
                 .padding(.bottom, 35)
