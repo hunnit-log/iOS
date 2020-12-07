@@ -14,7 +14,7 @@ struct AchievementBar: View {
     private let accentColor: Color
     
     private enum Constants {
-        static let cornerRadius: CGFloat = 4
+        static let cornerRadius: CGFloat = 5
     }
     
     init(width: CGFloat, height: CGFloat, achievement: Double, accentColor: Color = CustomColor.yellow) {
@@ -37,5 +37,13 @@ struct AchievementBar: View {
                        height: height)
                 .cornerRadius(Constants.cornerRadius)
         }
+    }
+}
+
+struct AchievementBar_Previews: PreviewProvider {
+    static var previews: some View {
+        AchievementBar(width: UIScreen.main.bounds.width,
+                       height: 20,
+                       achievement: 75)
     }
 }
