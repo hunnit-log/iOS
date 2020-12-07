@@ -13,19 +13,19 @@ struct HunnitLogApp: App {
         static let splashDuration: Double = 2
     }
     
-    @State var isActive:Bool = false
+    @State var isApplicationActive:Bool = false
     
     var body: some Scene {
         WindowGroup {
             VStack {
-                if self.isActive {
+                if self.isApplicationActive {
                     AchievementSetupView()
                 } else {
                     SplashView()
                 }
             }.onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + Constants.splashDuration) {
-                    self.isActive = true
+                    self.isApplicationActive = true
                 }
             }
         }
