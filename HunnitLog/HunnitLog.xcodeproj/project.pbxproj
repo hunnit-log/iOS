@@ -44,6 +44,7 @@
 		63CA1935257BBCF300CB2283 /* AchievementBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA1934257BBCF300CB2283 /* AchievementBar.swift */; };
 		63CA193A257BC5E300CB2283 /* BottomNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA1939257BC5E300CB2283 /* BottomNextButton.swift */; };
 		63CA19A5257E679900CB2283 /* ScoreBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19A1257E679900CB2283 /* ScoreBubble.swift */; };
+		63CA19A6257E679900CB2283 /* StepperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19A2257E679900CB2283 /* StepperButton.swift */; };
 		63F09B49256E9E5A00EB9101 /* AchievementRateModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */; };
 		E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */; };
 		E051ABAE257B5CCB00E06D52 /* AchievementQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E051ABAD257B5CCB00E06D52 /* AchievementQuestionView.swift */; };
@@ -121,6 +122,7 @@
 		63CA1934257BBCF300CB2283 /* AchievementBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementBar.swift; sourceTree = "<group>"; };
 		63CA1939257BC5E300CB2283 /* BottomNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNextButton.swift; sourceTree = "<group>"; };
 		63CA19A1257E679900CB2283 /* ScoreBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreBubble.swift; sourceTree = "<group>"; };
+		63CA19A2257E679900CB2283 /* StepperButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperButton.swift; sourceTree = "<group>"; };
 		63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementRateModalView.swift; sourceTree = "<group>"; };
 		E030BAFB256D0A5800EC18EC /* KeyWordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordButton.swift; sourceTree = "<group>"; };
 		E051ABAD257B5CCB00E06D52 /* AchievementQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementQuestionView.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				63CA19A1257E679900CB2283 /* ScoreBubble.swift */,
+				63CA19A2257E679900CB2283 /* StepperButton.swift */,
 			);
 			path = SelectAchievement;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				E051ABAE257B5CCB00E06D52 /* AchievementQuestionView.swift in Sources */,
 				63CA19032579359F00CB2283 /* HunnitSummary.swift in Sources */,
+				63CA19A6257E679900CB2283 /* StepperButton.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
 				63CA1930257BAE1D00CB2283 /* RetrospectWriteFinishView.swift in Sources */,
 				562F69BB256ECCC400C50C97 /* GoalList.swift in Sources */,
