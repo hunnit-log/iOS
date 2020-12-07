@@ -102,6 +102,8 @@ struct AchievementContent: CardContentable {
             Image(systemName: "chevron.right")
                 .frame(width: 24, height: 24)
         }
+        .padding(.top, 16)
+        .padding(.bottom, 14)
         .padding(.leading, 20)
         .padding(.trailing, 11)
     }
