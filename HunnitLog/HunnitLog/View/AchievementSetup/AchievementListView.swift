@@ -23,6 +23,7 @@ struct AchievementListView: View {
         
     }
     
+    let geometry: GeometryProxy
     @State var isLinkActive: Bool = false
     @State var achievementItems: [AchievementItemViewModel] = [
         AchievementItemViewModel(editable: false, title:  "안녕안녕"),
@@ -30,77 +31,80 @@ struct AchievementListView: View {
     @State var newItem: AchievementItemViewModel = AchievementItemViewModel(editable: true, title: "")
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            LazyVStack {
-                Text(Constants.titleString)
-                    .font(Constants.titleFont)
-                    .kerning(Constants.titleLetterSpacing)
-                    .foregroundColor(CustomColor.black)
-                    .frame(width: Constants.contentWidth, alignment: .leading)
-                    .padding(.bottom, 28)
-                
-                Text(Constants.descriptionString)
-                    .font(Constants.descriptionFont)
-                    .kerning(Constants.descriptionLetterSpacing)
-                    .foregroundColor(CustomColor.coolGray)
-                    .frame(width: Constants.contentWidth, alignment: .leading)
-                    .padding(.bottom, 80)
-                
-                ForEach(self.achievementItems) { item in
-                    AchievementItemView(item: item,
-                                        action: {
-                                            // 테스트를 위해 추가
-                                            self.achievementItems.removeAll(where: {
-                                                $0.id == item.id
-                                            })
-                                        })
-                }
-                
-                AchievementItemView(item: self.newItem,
-                                    action: {
-                                        
-                                    })
-                
-                Button(action: {
-                    self.newItem.editable = false
-                    self.achievementItems.append(self.newItem)
-                    self.newItem = AchievementItemViewModel(editable: true, title: "")
-                    
-                }) {
-                    Text("+")
+        VStack {
+            ScrollView(showsIndicators: false) {
+                LazyVStack {
+                    Text(Constants.titleString)
                         .font(Constants.titleFont)
+                        .kerning(Constants.titleLetterSpacing)
                         .foregroundColor(CustomColor.black)
+                        .frame(width: Constants.contentWidth, alignment: .leading)
+                        .padding(.bottom, 28)
+                    
+                    Text(Constants.descriptionString)
+                        .font(Constants.descriptionFont)
+                        .kerning(Constants.descriptionLetterSpacing)
+                        .foregroundColor(CustomColor.coolGray)
+                        .frame(width: Constants.contentWidth, alignment: .leading)
+                        .padding(.bottom, 80)
+                    
+                    ForEach(self.achievementItems) { item in
+                        AchievementItemView(item: item,
+                                            action: {
+                                                // 테스트를 위해 추가
+                                                self.achievementItems.removeAll(where: {
+                                                    $0.id == item.id
+                                                })
+                                            })
+                    }
+                    
+                    AchievementItemView(item: self.newItem,
+                                        action: {
+                                            
+                                        })
+                    
+                    Button(action: {
+                        self.newItem.editable = false
+                        self.achievementItems.append(self.newItem)
+                        self.newItem = AchievementItemViewModel(editable: true, title: "")
+                        
+                    }) {
+                        Text("+")
+                            .font(Constants.titleFont)
+                            .foregroundColor(CustomColor.black)
+                    }
+                    .frame(width: Constants.contentWidth, height: 67)
+                    .background(CustomColor.lightGray)
+                    .cornerRadius(Constants.cornerRadius)
+                    .padding(.bottom, 100)
+                    
+                    Text("이런 목표들은 어때요?")
+                        .padding(.bottom, 20)
                 }
-                .frame(width: Constants.contentWidth, height: 67)
-                .background(CustomColor.lightGray)
-                .cornerRadius(Constants.cornerRadius)
-                .padding(.bottom, 100)
-                
-                Text("이런 목표들은 어때요?")
-                    .padding(.bottom, 20)
-                
-                Button(action: {
-                    self.isLinkActive = true
-                }) {
-                    Text("네비게이션 테스트를 위해 추가한 버튼입니다.")
-                }
-                .padding(.bottom, 20)
             }
-            .background(
-                NavigationLink(
-                    destination: AchievementQuestionView(),
-                    isActive: $isLinkActive,
-                    label: {
-                       EmptyView()
-                    })
-                    .navigationBarTitle("", displayMode: .inline)
-                    .hidden())
+            BottomNextButton(geometry: self.geometry,
+                             type: .next) {
+                self.isLinkActive = true
+            }
         }
+        .edgesIgnoringSafeArea(.bottom)
+        .background(
+            NavigationLink(
+                destination: AchievementQuestionView(geometry: geometry),
+                isActive: $isLinkActive,
+                label: {
+                    EmptyView()
+                })
+                .edgesIgnoringSafeArea(.bottom)
+                .navigationBarTitle("", displayMode: .inline)
+                .hidden())
     }
 }
 
 struct AchievementListView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementListView()
+        GeometryReader(content: { geometry in
+            AchievementListView(geometry: geometry)
+        })
     }
 }

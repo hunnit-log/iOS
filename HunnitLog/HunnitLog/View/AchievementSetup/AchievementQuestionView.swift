@@ -22,34 +22,56 @@ struct AchievementQuestionView: View {
         static let descriptionLetterSpacing: CGFloat = -0.42
         
     }
+    let geometry: GeometryProxy
+    @State var isLinkActive: Bool = false
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack {
-                Text(Constants.titleString)
-                    .font(Constants.titleFont)
-                    .kerning(Constants.titleLetterSpacing)
-                    .foregroundColor(CustomColor.black)
-                    .frame(width: Constants.contentWidth, alignment: .leading)
-                    .padding(.bottom, 28)
-                
-                Text(Constants.descriptionString)
-                    .font(Constants.descriptionFont)
-                    .kerning(Constants.descriptionLetterSpacing)
-                    .foregroundColor(CustomColor.coolGray)
-                    .frame(width: Constants.contentWidth, alignment: .leading)
-                    .padding(.bottom, 57)
-                
-                RetrospectQuestionView()
-                    .padding(.bottom, 28)
-                
+        VStack {
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    Text(Constants.titleString)
+                        .font(Constants.titleFont)
+                        .kerning(Constants.titleLetterSpacing)
+                        .foregroundColor(CustomColor.black)
+                        .frame(width: Constants.contentWidth, alignment: .leading)
+                        .padding(.bottom, 28)
+                    
+                    Text(Constants.descriptionString)
+                        .font(Constants.descriptionFont)
+                        .kerning(Constants.descriptionLetterSpacing)
+                        .foregroundColor(CustomColor.coolGray)
+                        .frame(width: Constants.contentWidth, alignment: .leading)
+                        .padding(.bottom, 57)
+                    
+                    RetrospectQuestionView()
+                        .padding(.bottom, 28)
+                    
+                    
+                }
+            }
+            BottomNextButton(geometry: self.geometry,
+                             type: .next) {
+                self.isLinkActive = true
             }
         }
+        .edgesIgnoringSafeArea(.bottom)
+        .background(
+            NavigationLink(
+                destination: AchievementQuestionView(geometry: geometry),
+                isActive: $isLinkActive,
+                label: {
+                    EmptyView()
+                })
+                .edgesIgnoringSafeArea(.bottom)
+                .navigationBarTitle("", displayMode: .inline)
+                .hidden())
     }
 }
 
 struct AchievementQuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementQuestionView()
+        GeometryReader(content: { geometry in
+            AchievementQuestionView(geometry: geometry)
+        })
     }
 }

@@ -31,6 +31,8 @@ struct AchievementDateView: View {
     private let buttonAction: () -> Void = {
         
     }
+    let geometry: GeometryProxy
+    @State var isLinkActive: Bool = false
     
     var buttonTitleString: String = "2020년 11월 5일"
     var footerString: String = "종료일 : 2021년 5월 4일"
@@ -42,9 +44,7 @@ struct AchievementDateView: View {
                 .kerning(Constants.titleLetterSpacing)
                 .foregroundColor(CustomColor.black)
                 .frame(width: Constants.contentWidth, alignment: .leading)
-            
-            Spacer()
-                .frame(width: .infinity, height: 28)
+                .padding(.bottom, 28)
             
             Text(Constants.descriptionString)
                 .font(Constants.descriptionFont)
@@ -75,12 +75,30 @@ struct AchievementDateView: View {
                 .foregroundColor(CustomColor.coolGray)
                 .frame(width: Constants.contentWidth, alignment: .center)
                 .padding(.bottom, 27)
+            
+            BottomNextButton(geometry: self.geometry,
+                             type: .next) {
+                self.isLinkActive = true
+            }
         }
+        .edgesIgnoringSafeArea(.bottom)
+        .background(
+            NavigationLink(
+                destination: AchievementListView(geometry: geometry),
+                isActive: $isLinkActive,
+                label: {
+                    EmptyView()
+                })
+                .navigationBarTitle("", displayMode: .inline)
+                .hidden())
     }
 }
 
 struct AchievementDateView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementDateView()
+        GeometryReader(content: { geometry in
+            AchievementDateView(geometry: geometry)
+        })
+        
     }
 }
