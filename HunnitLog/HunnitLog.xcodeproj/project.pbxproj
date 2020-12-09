@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -53,6 +53,9 @@
 		E05859792574A05A00F5AE0C /* AchievementDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05859782574A05A00F5AE0C /* AchievementDateView.swift */; };
 		E058597E2575CF6F00F5AE0C /* AchievementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E058597D2575CF6F00F5AE0C /* AchievementListView.swift */; };
 		E09B973925711196004C882D /* AchievementSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B973825711196004C882D /* AchievementSetupView.swift */; };
+		E0A0AFD1257E2A0D0030F3F6 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E0A0AFD0257E2A0D0030F3F6 /* Lottie */; };
+		E0A0AFD7257E2A2B0030F3F6 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0AFD6257E2A2B0030F3F6 /* SplashView.swift */; };
+		E0A0AFDF257E2BBB0030F3F6 /* splash.json in Resources */ = {isa = PBXBuildFile; fileRef = E0A0AFDE257E2BBB0030F3F6 /* splash.json */; };
 		E0B1886C2576592D003DF180 /* AchievementItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B1886B2576592D003DF180 /* AchievementItemViewModel.swift */; };
 		E0B18872257659BC003DF180 /* AchievementItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B18871257659BC003DF180 /* AchievementItemView.swift */; };
 		E0B1887D25765B71003DF180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B1887C25765B71003DF180 /* Images.xcassets */; };
@@ -133,6 +136,8 @@
 		E05859782574A05A00F5AE0C /* AchievementDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDateView.swift; sourceTree = "<group>"; };
 		E058597D2575CF6F00F5AE0C /* AchievementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementListView.swift; sourceTree = "<group>"; };
 		E09B973825711196004C882D /* AchievementSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSetupView.swift; sourceTree = "<group>"; };
+		E0A0AFD6257E2A2B0030F3F6 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E0A0AFDE257E2BBB0030F3F6 /* splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash.json; sourceTree = "<group>"; };
 		E0B1886B2576592D003DF180 /* AchievementItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementItemViewModel.swift; sourceTree = "<group>"; };
 		E0B18871257659BC003DF180 /* AchievementItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementItemView.swift; sourceTree = "<group>"; };
 		E0B1887C25765B71003DF180 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -148,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A0AFD1257E2A0D0030F3F6 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +361,15 @@
 			path = AchievementSetup;
 			sourceTree = "<group>";
 		};
+		E0A0AFD5257E2A200030F3F6 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E0A0AFD6257E2A2B0030F3F6 /* SplashView.swift */,
+				E0A0AFDE257E2BBB0030F3F6 /* splash.json */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		E0B9146A2561581000F93987 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +400,7 @@
 		E0B9149A256158DF00F93987 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0A0AFD5257E2A200030F3F6 /* Splash */,
 				63A4DF62256C258E00257ED2 /* CustomAlert */,
 				E09B973725711177004C882D /* AchievementSetup */,
 				562F698D256EBF8400C50C97 /* Home */,
@@ -418,6 +434,9 @@
 			dependencies = (
 			);
 			name = HunnitLog;
+			packageProductDependencies = (
+				E0A0AFD0257E2A0D0030F3F6 /* Lottie */,
+			);
 			productName = HunnitLog;
 			productReference = 6391D16825655C960007A926 /* HunnitLog.app */;
 			productType = "com.apple.product-type.application";
@@ -489,6 +508,9 @@
 				Base,
 			);
 			mainGroup = 6391D15F25655C960007A926;
+			packageReferences = (
+				E0A0AFCF257E2A0D0030F3F6 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 6391D16925655C960007A926 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -508,6 +530,7 @@
 				562F697D256A7A8700C50C97 /* Colors.xcassets in Resources */,
 				E0B1887D25765B71003DF180 /* Images.xcassets in Resources */,
 				6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */,
+				E0A0AFDF257E2BBB0030F3F6 /* splash.json in Resources */,
 				6391D17025655C970007A926 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +595,7 @@
 				635D5F5B25727FD500FEB3EF /* AchievementModalHeader.swift in Sources */,
 				E0B91481256158AA00F93987 /* Tracker.swift in Sources */,
 				63CA19A7257E679900CB2283 /* SelectAchievementRow.swift in Sources */,
+				E0A0AFD7257E2A2B0030F3F6 /* SplashView.swift in Sources */,
 				632A10B12566CF2B0085B126 /* ContentView.swift in Sources */,
 				E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */,
 				E0B18887257662CE003DF180 /* RetrospectQuestionViewModel.swift in Sources */,
@@ -737,9 +761,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HunnitLog/Preview Content\"";
-				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				DEVELOPMENT_TEAM = 94R4GZ63X7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HunnitLog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -748,8 +774,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.choya.sqoo.naljin.HunnitLog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naljin.HunnitLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -760,9 +787,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HunnitLog/Preview Content\"";
-				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				DEVELOPMENT_TEAM = 94R4GZ63X7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HunnitLog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -771,8 +800,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.choya.sqoo.naljin.HunnitLog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naljin.HunnitLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -784,7 +814,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				DEVELOPMENT_TEAM = 94R4GZ63X7;
 				INFOPLIST_FILE = HunnitLogTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -806,7 +836,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				DEVELOPMENT_TEAM = 94R4GZ63X7;
 				INFOPLIST_FILE = HunnitLogTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -827,7 +857,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				DEVELOPMENT_TEAM = 94R4GZ63X7;
 				INFOPLIST_FILE = HunnitLogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -847,7 +877,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R5YDMBY4CB;
+				DEVELOPMENT_TEAM = 94R4GZ63X7;
 				INFOPLIST_FILE = HunnitLogUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -902,6 +932,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0A0AFCF257E2A0D0030F3F6 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0A0AFD0257E2A0D0030F3F6 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A0AFCF257E2A0D0030F3F6 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6391D16025655C960007A926 /* Project object */;
 }
