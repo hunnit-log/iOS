@@ -10,8 +10,15 @@ import SwiftUI
 struct DetailAnswerRow: View {
     
     let question: String
-    let content: String?
+    let answer: String?
     let isEditable: Bool
+    let isFromDetailView: Bool
+    
+    private var contentFont: Font {
+        get {
+            return isFromDetailView ? .system(size: 15) : .system(size: 14)
+        }
+    }
     
     private enum Constants {
         static let editTitle = "수정하기"
@@ -22,14 +29,10 @@ struct DetailAnswerRow: View {
         
         static let questionFont: Font = .system(size: 16, weight: .bold)
         
-        static let contentFont: Font = .system(size: 16)
         static let contentTop: CGFloat = 15
         
         static let horizontalPadding: CGFloat = 33
         static let verticalPadding: CGFloat = 27
-        static let borderWidth: CGFloat = 0.5
-        static let borderCornerRadius: CGFloat = 27
-        
     }
     
     var body: some View {
@@ -54,9 +57,9 @@ struct DetailAnswerRow: View {
                 .opacity(isEditable ? 1 : 0)
             }
             
-            if let content = content {
+            if let content = answer {
                 Text(content)
-                    .font(Constants.contentFont)
+                    .font(contentFont)
                     .foregroundColor(CustomColor.black)
                     .padding(.top, Constants.contentTop)
             }
@@ -64,8 +67,12 @@ struct DetailAnswerRow: View {
         .padding(.horizontal, Constants.horizontalPadding)
         .padding(.vertical, Constants.verticalPadding)
         .background(Color.white)
-        .makeRoundedWithBorder(CustomColor.gray,
-                               width: Constants.borderWidth,
-                               cornerRadius: Constants.borderCornerRadius)
+        
+    }
+}
+
+struct DetailAnswerRow_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailAnswerRow(question: "질문", answer: "답변", isEditable: true, isFromDetailView: false)
     }
 }
