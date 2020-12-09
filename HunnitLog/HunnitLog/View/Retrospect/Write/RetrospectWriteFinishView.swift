@@ -12,6 +12,7 @@ struct RetrospectWriteFinishView: View {
     // MARK: - 더미데이터
     let period = "2020. 11. 01 - 2020. 1. 29"
     let title = "다섯번째 회고록"
+    @State var isActive = true
     
     let evaluation: String = "조금 부족해요."
     let achievement: Double = 25
@@ -123,6 +124,7 @@ struct RetrospectWriteFinishView: View {
                 
                 Spacer()
                 BottomNextButton(geometry: geometry,
+                                 isActive: $isActive,
                                  type: .next,
                                  buttonAction: {
                                     isAlertPresented = true
