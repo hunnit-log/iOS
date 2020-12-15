@@ -7,18 +7,11 @@
 
 import SwiftUI
 
-private struct CustomButtonStyle<Content>: ButtonStyle where Content: View {
-    
-    var change: (Bool) -> Content
-    
-    func makeBody(configuration: Self.Configuration) -> some View {
-        return change(configuration.isPressed)
-    }
-}
-
 struct TagButton: View {
     private let title: String
     private let buttonAction: (() -> Void)
+    
+    @State var isSelected: Bool = false
     
     private enum Constants {
         static let cornerRadius: CGFloat = 9
@@ -36,8 +29,6 @@ struct TagButton: View {
     
     var body: some View {
         Button(action: self.buttonAction) {
-            EmptyView()
-        }.buttonStyle(CustomButtonStyle(change: { isSelected in
             Text(self.title)
                 .font(Constants.titleFont)
                 .kerning(Constants.letterSpacing)
@@ -45,17 +36,18 @@ struct TagButton: View {
                                     leading: Constants.horizontalPadding,
                                     bottom: Constants.verticalPadding,
                                     trailing: Constants.horizontalPadding))
-                .background(isSelected ? CustomColor.gray : Color.clear)
-                .foregroundColor(isSelected ? .white : CustomColor.darkGray)
+                .background(self.isSelected ? CustomColor.gray : Color.clear)
+                .foregroundColor(self.isSelected ? .white : CustomColor.darkGray)
                 .cornerRadius(Constants.cornerRadius)
                 .overlay(RoundedRectangle(cornerRadius: Constants.cornerRadius)
                             .stroke(CustomColor.gray,
                                     lineWidth: Constants.borderWidth))
-        }))
+        }
     }
 }
 
 struct TagView_Previews: PreviewProvider {
+    static let isSelected = false
     static var previews: some View {
         TagButton(title: "자격증 따기") {
             print("action")
