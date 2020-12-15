@@ -27,8 +27,21 @@ struct AchievementListView: View {
     @State var isLinkActive: Bool = false
     @State var achievementItems: [AchievementItemViewModel] = [
         AchievementItemViewModel(editable: false, title:  "안녕안녕"),
+        AchievementItemViewModel(editable: false, title:  "안녕안녕"),
+        AchievementItemViewModel(editable: false, title:  "안녕안녕"),
     ]
     @State var newItem: AchievementItemViewModel = AchievementItemViewModel(editable: true, title: "")
+    
+    var tagButtonItems: [TagButtonViewModel] = [
+        TagButtonViewModel(title: "자격증 따기"),
+        TagButtonViewModel(title: "학점 4.0 넘기"),
+        TagButtonViewModel(title: "일찍 일어나기"),
+        TagButtonViewModel(title: "몸무게 40kg 진입"),
+        TagButtonViewModel(title: "자격증 따기"),
+        TagButtonViewModel(title: "자격증 따기"),
+        TagButtonViewModel(title: "학점 4.0 넘기"),
+        TagButtonViewModel(title: "일찍 일어나기"),
+    ]
     
     var body: some View {
         VStack {
@@ -62,12 +75,10 @@ struct AchievementListView: View {
                                         action: {
                                             
                                         })
-                    
                     Button(action: {
                         self.newItem.editable = false
                         self.achievementItems.append(self.newItem)
                         self.newItem = AchievementItemViewModel(editable: true, title: "")
-                        
                     }) {
                         Text("+")
                             .font(Constants.titleFont)
@@ -80,6 +91,16 @@ struct AchievementListView: View {
                     
                     Text("이런 목표들은 어때요?")
                         .padding(.bottom, 20)
+                    
+                    FlowView(mode: .scrollable,
+                             binding: .constant(5),
+                             items: self.tagButtonItems) { item in
+                        TagButton(item: item) {
+                            // TODO : - 버튼 선택시 액션
+                            print($0)
+                        }
+                    }.padding()
+                    
                 }
             }
             BottomNextButton(geometry: self.geometry,
