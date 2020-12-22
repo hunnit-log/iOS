@@ -10,8 +10,27 @@ import SwiftUI
 struct ScoreRow: View {
     @State private var sliderValue: Double = 0
     
-    let title: String
-    let achievement: Int
+    private let title: String
+    private let achievement: Int
+    
+    private var score: Int {
+            let roundedValue = Int(round(sliderValue))
+            var score: Int
+            if(roundedValue % 2 == 0 && roundedValue != 0) {
+                if(roundedValue < 0){
+                    score = roundedValue - 1
+                } else {
+                    score = roundedValue + 1
+                }
+            } else if(abs(roundedValue) == 1){
+                return 0
+                
+            } else {
+                score = roundedValue
+                return score
+            }
+            return score
+    }
     
     private enum Constants {
         static let horizontalPadding: CGFloat = 18
@@ -54,11 +73,23 @@ struct ScoreRow: View {
                 
                 GeometryReader { geometry in
                     VStack {
+                        let baseOffset = CGFloat(sliderValue) + geometry.size.width/2 - 35 //이미지 width의 1/2
                         HStack {
-                            Emotion(rawValue: makeScore(sliderValue))?
-                                .image
-                                .frame(width: CGFloat(geometry.size.width / 10 * CGFloat(5.9 + sliderValue)), height: 32, alignment: .bottomTrailing)
-                            Spacer()
+                            //min
+                            if(baseOffset < 149.5){
+                                Emotion(rawValue: score)?
+                                    .image
+                                    .offset(x: 164 + CGFloat(geometry.size.width / 10 * CGFloat(sliderValue)))
+                            //max
+                            }else if(baseOffset > 158.5){
+                                Emotion(rawValue: score)?
+                                    .image
+                                    .offset(x: 140 + CGFloat(geometry.size.width / 10 * CGFloat(sliderValue)))
+                            }else{
+                                Emotion(rawValue: score)?
+                                    .image
+                                    .offset(x: baseOffset + CGFloat(geometry.size.width / 10 * CGFloat(sliderValue)))
+                            }
                         }
                     }
                 }
@@ -115,28 +146,6 @@ extension ScoreRow {
             }
             
         }
-    }
-    
-    
-    // MARK: makeScore - slider의 값을 정해진 점수로 보정해주는 함수입니다.
-    func makeScore(_ sliderValue: Double) -> Int {
-        let roundedValue = Int(round(sliderValue))
-        var score: Int
-        if(roundedValue % 2 == 0 && roundedValue != 0) {
-            if(roundedValue < 0){
-                score = roundedValue - 1
-            } else {
-                score = roundedValue + 1
-            }
-        } else if(abs(roundedValue) == 1){
-            return 0
-            
-        } else {
-            score = roundedValue
-            return score
-        }
-        
-        return score
     }
 }
 
