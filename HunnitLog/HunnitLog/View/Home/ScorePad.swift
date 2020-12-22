@@ -10,7 +10,7 @@ import SwiftUI
 struct ScorePad: View {
     
     private enum Constants {
-        static let titleFont: Font = .system(size: 16)
+        static let titleFont: Font = .system(size: 16, weight: .medium)
         static let numberFont: Font = .system(size: 13)
         static let backgroundRadius: CGFloat = 13
         
