@@ -70,8 +70,8 @@ struct ScorePad: View {
     ]
     
     var body: some View {
-        let range = calendar.range(of: .day, in: .month, for: calendar.date(from:dateComponents)!)
-        let numDays = range!.count
+        let range = calendar.range(of: .day, in: .month, for: calendar.date(from:dateComponents) ?? Date())
+        let numDays = range?.count ?? 0
         
         ZStack {
             Rectangle()
