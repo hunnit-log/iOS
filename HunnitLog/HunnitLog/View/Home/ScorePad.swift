@@ -87,6 +87,7 @@ struct ScorePad: View {
                     Spacer()
                     Text("\(String(currentYear))년 \(showingMonth)월")
                         .font(Constants.titleFont)
+                        .foregroundColor(CustomColor.black)
                     Spacer()
                     Button(action: goNext, label: {
                         Image(Constants.rightImageName)
