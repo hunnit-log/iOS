@@ -2,18 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icCalendarBack.png",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "icCalendarBack.png"
     },
     {
-      "filename" : "icCalendarBack@2x.png",
+      "idiom" : "universal",
       "scale" : "2x",
-      "idiom" : "universal"
+      "filename" : "icCalendarBack@2x.png"
     },
     {
       "filename" : "icCalendarBack@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "idiom" : "universal"
     }
   ],
   "info" : {

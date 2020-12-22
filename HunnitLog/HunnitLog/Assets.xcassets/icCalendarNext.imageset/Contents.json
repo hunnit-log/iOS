@@ -2,13 +2,13 @@
   "images" : [
     {
       "filename" : "icCalendarNext.png",
-      "scale" : "1x",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "filename" : "icCalendarNext@2x.png",
+      "scale" : "2x",
       "idiom" : "universal",
-      "scale" : "2x"
+      "filename" : "icCalendarNext@2x.png"
     },
     {
       "idiom" : "universal",

@@ -6,13 +6,13 @@
       "idiom" : "universal"
     },
     {
-      "idiom" : "universal",
       "filename" : "icCalendarNonNext@2x.png",
+      "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "icCalendarNonNext@3x.png",
       "idiom" : "universal",
+      "filename" : "icCalendarNonNext@3x.png",
       "scale" : "3x"
     }
   ],
