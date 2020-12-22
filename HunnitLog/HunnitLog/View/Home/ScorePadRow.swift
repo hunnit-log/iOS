@@ -28,13 +28,13 @@ struct ScorePadRow: View {
     }
     
     // MARK: - 더미 데이터 구조체
-    struct feelingIcon: Hashable {
+    struct FeelingIcon: Hashable {
         var feeling: Feeling
     }
     
     // MARK: - 더미 데이터
     // 왜 여기선 private 선언하면 오류가 나는가,,
-    var goalFeeling = feelingIcon(feeling: Feeling.excellent)
+    var goalFeeling = FeelingIcon(feeling: Feeling.excellent)
 
     var body: some View {
         VStack(spacing: 0) {

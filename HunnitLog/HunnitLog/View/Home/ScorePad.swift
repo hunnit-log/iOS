@@ -55,18 +55,18 @@ struct ScorePad: View {
     }
     
     // MARK: - 더미 데이터 구조체
-    struct dailyFeeling: Hashable {
+    struct DailyFeeling: Hashable {
         var day: Int
         var feeling: Feeling
     }
     
     // MARK: - 더미 데이터
     private var feelings = [
-        dailyFeeling(day: 1, feeling: Feeling.good),
-        dailyFeeling(day: 2, feeling: Feeling.notBad),
-        dailyFeeling(day: 3, feeling: Feeling.excellent),
-        dailyFeeling(day: 4, feeling: Feeling.bad),
-        dailyFeeling(day: 5, feeling: Feeling.soso)
+        DailyFeeling(day: 1, feeling: Feeling.good),
+        DailyFeeling(day: 2, feeling: Feeling.notBad),
+        DailyFeeling(day: 3, feeling: Feeling.excellent),
+        DailyFeeling(day: 4, feeling: Feeling.bad),
+        DailyFeeling(day: 5, feeling: Feeling.soso)
     ]
     
     var body: some View {
