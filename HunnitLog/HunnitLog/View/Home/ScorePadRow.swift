@@ -17,7 +17,7 @@ struct ScorePadRow: View {
         static let padVerticalPadding: CGFloat = 17
         static let topPadding: CGFloat = 15
         static let bottomPadding: CGFloat = 11
-        static let trailing: CGFloat = 10
+        static let trailing: CGFloat = 17
         static let circleDiameter: CGFloat = 47
         static let titleFont: Font = .system(size: 17)
         static let achievementFont: Font = .system(size: 13)
@@ -27,31 +27,36 @@ struct ScorePadRow: View {
         static let upImageName: String = "chevron.up"
     }
     
+    // MARK: - 더미 데이터 구조체
+    struct feelingIcon: Hashable {
+        var feeling: Feeling
+    }
     
+    // MARK: - 더미 데이터
+    // 왜 여기선 private 선언하면 오류가 나는가,,
+    var goalFeeling = feelingIcon(feeling: Feeling.excellent)
+
     var body: some View {
-        VStack {
-            HStack {
-                Circle()
-                    .fill(CustomColor.yellow)
+        VStack(spacing: 0) {
+            HStack(spacing: 0) {
+                goalFeeling.feeling.icon
+                    .resizable()
                     .frame(width: Constants.circleDiameter, height: Constants.circleDiameter)
                     .padding(.trailing, Constants.trailing)
-                    
-                VStack {
+                VStack(alignment: .leading) {
                     HStack {
                         Text(title)
                             .font(Constants.titleFont)
-                            Spacer()
                     }
                     HStack {
                         Text("달성률 \(achievement)%")
                             .font(Constants.achievementFont)
                             .foregroundColor(CustomColor.coolGray)
-                        Spacer()
                     }
                 }
+                Spacer()
                 Image(systemName: Constants.upImageName)
                     .foregroundColor(CustomColor.darkGray)
-                
                 
             }
             .padding(.horizontal, Constants.titleHorizontalPadding)
