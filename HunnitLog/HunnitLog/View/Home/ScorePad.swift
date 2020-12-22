@@ -18,9 +18,14 @@ struct ScorePad: View {
         static let feelingSpacing: CGFloat = 5
         
         static let padHeight: CGFloat = 236
+        static let padBottomPadding: CGFloat = 7
         
         static let leftImageName: String = "icCalendarBack"
         static let rightImageName: String = "icCalendarNext"
+        
+        static let titleTopPadding: CGFloat = 16
+        static let titleHorizontalPadding: CGFloat = 16
+        static let titleBottomPadding: CGFloat = 14
     }
     
     // MARK: - 서버 구현 방식에 따라 달라질 내용들
@@ -31,7 +36,7 @@ struct ScorePad: View {
     @State private var showingMonth = Calendar.current.component(.month, from: Date())
     @State private var dateComponents = DateComponents()
     
-    // MARK: - Grid 형태 정의
+    // MARK: - Gr87id 형태 정의
     var columns: [GridItem] {
         [
             GridItem(.fixed(Constants.feelingsDiameter), spacing:Constants.feelingSpacing),
@@ -63,9 +68,9 @@ struct ScorePad: View {
     // MARK: - 더미 데이터
     private var feelings = [
         DailyFeeling(day: 1, feeling: Feeling.good),
-        DailyFeeling(day: 2, feeling: Feeling.notBad),
-        DailyFeeling(day: 3, feeling: Feeling.excellent),
-        DailyFeeling(day: 4, feeling: Feeling.bad),
+        DailyFeeling(day: 20, feeling: Feeling.notBad),
+        DailyFeeling(day: 13, feeling: Feeling.excellent),
+        DailyFeeling(day: 24, feeling: Feeling.bad),
         DailyFeeling(day: 5, feeling: Feeling.soso)
     ]
     
@@ -77,8 +82,8 @@ struct ScorePad: View {
             Rectangle()
                 .cornerRadius(Constants.backgroundRadius)
                 .foregroundColor(CustomColor.bgColor)
-            VStack {
-                HStack {
+            VStack(spacing: 0) {
+                HStack(spacing: 0) {
                     Button(action: goPrev, label: {
                         // TODO: - 아이콘 색 분기처리
                         Image(Constants.leftImageName)
@@ -93,12 +98,17 @@ struct ScorePad: View {
                         Image(Constants.rightImageName)
                             .foregroundColor(CustomColor.black)
                     })
-                    
                 }
+                .padding(.top, Constants.titleTopPadding)
+                .padding(.horizontal, Constants.titleHorizontalPadding)
+                .padding(.bottom, Constants.titleBottomPadding)
+                
+                
+                var feelingSort = feelings.sorted(by: {$0.day < $1.day})
                 LazyVGrid(columns: columns, spacing:5, content: {
-                    ForEach(0..<numDays) { f in
-                        if f < feelings.count {
-                            feelings[f].feeling.icon
+                    ForEach(1...numDays, id:\.self) { day in
+                        if (feelingSort.first?.day == day) {
+                            feelingSort.removeFirst().feeling.icon
                                 .resizable()
                                 .frame(width:Constants.feelingsDiameter, height:Constants.feelingsDiameter)
                         } else {
@@ -106,7 +116,7 @@ struct ScorePad: View {
                                 Circle()
                                     .frame(width:Constants.feelingsDiameter, height:Constants.feelingsDiameter)
                                     .foregroundColor(CustomColor.lightGray)
-                                Text("\(f + 1)")
+                                Text("\(day)")
                                     .font(Constants.numberFont)
                                     .foregroundColor(CustomColor.coolGray)
                             }
@@ -114,6 +124,7 @@ struct ScorePad: View {
                     }
                 })
                 .lineSpacing(Constants.feelingSpacing)
+                Spacer()
             }
         }
         .frame(height: Constants.padHeight)
