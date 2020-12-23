@@ -36,7 +36,7 @@ struct ScorePad: View {
     @State private var showingMonth = Calendar.current.component(.month, from: Date())
     @State private var dateComponents = DateComponents()
     
-    // MARK: - Gr87id 형태 정의
+    // MARK: - Grid 형태 정의
     var columns: [GridItem] {
         [
             GridItem(.fixed(Constants.feelingsDiameter), spacing:Constants.feelingSpacing),
