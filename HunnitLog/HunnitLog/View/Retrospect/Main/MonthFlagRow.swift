@@ -28,3 +28,10 @@ struct MonthFlagRow: View {
         }
     }
 }
+
+struct MonthFlagRow_Previews: PreviewProvider {
+    static var previews: some View {
+        MonthFlagRow(lineType: .bottomHalf, date: "2020.12")
+    }
+}
+

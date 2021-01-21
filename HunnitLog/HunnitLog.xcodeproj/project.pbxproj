@@ -43,6 +43,10 @@
 		63CA1930257BAE1D00CB2283 /* RetrospectWriteFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA192F257BAE1C00CB2283 /* RetrospectWriteFinishView.swift */; };
 		63CA1935257BBCF300CB2283 /* AchievementBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA1934257BBCF300CB2283 /* AchievementBar.swift */; };
 		63CA193A257BC5E300CB2283 /* BottomNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA1939257BC5E300CB2283 /* BottomNextButton.swift */; };
+		63CA19A4257E679900CB2283 /* SelectAchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19A0257E679900CB2283 /* SelectAchievementView.swift */; };
+		63CA19A5257E679900CB2283 /* ScoreBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19A1257E679900CB2283 /* ScoreBubble.swift */; };
+		63CA19A6257E679900CB2283 /* StepperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19A2257E679900CB2283 /* StepperButton.swift */; };
+		63CA19A7257E679900CB2283 /* SelectAchievementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA19A3257E679900CB2283 /* SelectAchievementRow.swift */; };
 		63F09B49256E9E5A00EB9101 /* AchievementRateModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */; };
 		E030BAFC256D0A5800EC18EC /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E030BAFB256D0A5800EC18EC /* TagButton.swift */; };
 		E034A5DE25887CF30092A050 /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E034A5DD25887CF30092A050 /* FlowView.swift */; };
@@ -124,6 +128,10 @@
 		63CA192F257BAE1C00CB2283 /* RetrospectWriteFinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectWriteFinishView.swift; sourceTree = "<group>"; };
 		63CA1934257BBCF300CB2283 /* AchievementBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementBar.swift; sourceTree = "<group>"; };
 		63CA1939257BC5E300CB2283 /* BottomNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNextButton.swift; sourceTree = "<group>"; };
+		63CA19A0257E679900CB2283 /* SelectAchievementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAchievementView.swift; sourceTree = "<group>"; };
+		63CA19A1257E679900CB2283 /* ScoreBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreBubble.swift; sourceTree = "<group>"; };
+		63CA19A2257E679900CB2283 /* StepperButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperButton.swift; sourceTree = "<group>"; };
+		63CA19A3257E679900CB2283 /* SelectAchievementRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAchievementRow.swift; sourceTree = "<group>"; };
 		63F09B48256E9E5A00EB9101 /* AchievementRateModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementRateModalView.swift; sourceTree = "<group>"; };
 		E030BAFB256D0A5800EC18EC /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 		E034A5DD25887CF30092A050 /* FlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowView.swift; sourceTree = "<group>"; };
@@ -199,6 +207,7 @@
 				635D5F7E2572924A00FEB3EF /* Main */,
 				63A4DF9C256E9B9D00257ED2 /* AchievementModal */,
 				63CA192E257BADF300CB2283 /* Write */,
+				63CA199F257E679900CB2283 /* SelectAchievement */,
 			);
 			path = Retrospect;
 			sourceTree = "<group>";
@@ -329,6 +338,17 @@
 				63CA1939257BC5E300CB2283 /* BottomNextButton.swift */,
 			);
 			path = Write;
+			sourceTree = "<group>";
+		};
+		63CA199F257E679900CB2283 /* SelectAchievement */ = {
+			isa = PBXGroup;
+			children = (
+				63CA19A1257E679900CB2283 /* ScoreBubble.swift */,
+				63CA19A2257E679900CB2283 /* StepperButton.swift */,
+				63CA19A3257E679900CB2283 /* SelectAchievementRow.swift */,
+				63CA19A0257E679900CB2283 /* SelectAchievementView.swift */,
+			);
+			path = SelectAchievement;
 			sourceTree = "<group>";
 		};
 		E09B973725711177004C882D /* AchievementSetup */ = {
@@ -547,8 +567,10 @@
 				562F69B3256ECC3A00C50C97 /* GoalRow.swift in Sources */,
 				E030BAFC256D0A5800EC18EC /* TagButton.swift in Sources */,
 				632A10762566B9EB0085B126 /* AchievementRow.swift in Sources */,
+				63CA19A4257E679900CB2283 /* SelectAchievementView.swift in Sources */,
 				632A106E2566B94C0085B126 /* ShadowCard.swift in Sources */,
 				63A4DF25256C1B0700257ED2 /* CustomAlertHostingController.swift in Sources */,
+				63CA19A5257E679900CB2283 /* ScoreBubble.swift in Sources */,
 				635D5F6E25728D4400FEB3EF /* AchievementModalRow.swift in Sources */,
 				E034A5DE25887CF30092A050 /* FlowView.swift in Sources */,
 				630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */,
@@ -570,6 +592,7 @@
 				6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */,
 				E051ABAE257B5CCB00E06D52 /* AchievementQuestionView.swift in Sources */,
 				63CA19032579359F00CB2283 /* HunnitSummary.swift in Sources */,
+				63CA19A6257E679900CB2283 /* StepperButton.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
 				63CA1930257BAE1D00CB2283 /* RetrospectWriteFinishView.swift in Sources */,
 				562F69BB256ECCC400C50C97 /* GoalList.swift in Sources */,
@@ -578,6 +601,7 @@
 				63F09B49256E9E5A00EB9101 /* AchievementRateModalView.swift in Sources */,
 				635D5F5B25727FD500FEB3EF /* AchievementModalHeader.swift in Sources */,
 				E0B91481256158AA00F93987 /* Tracker.swift in Sources */,
+				63CA19A7257E679900CB2283 /* SelectAchievementRow.swift in Sources */,
 				E0A0AFD7257E2A2B0030F3F6 /* SplashView.swift in Sources */,
 				632A10B12566CF2B0085B126 /* ContentView.swift in Sources */,
 				E0B91483256158AA00F93987 /* APIServiceError.swift in Sources */,
