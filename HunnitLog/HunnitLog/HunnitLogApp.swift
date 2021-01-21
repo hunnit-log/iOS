@@ -9,9 +9,25 @@ import SwiftUI
 
 @main
 struct HunnitLogApp: App {
+    private enum Constants {
+        static let splashDuration: Double = 2
+    }
+    
+    @State var isApplicationActive:Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VStack {
+                if self.isApplicationActive {
+                    AchievementSetupView()
+                } else {
+                    SplashView()
+                }
+            }.onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + Constants.splashDuration) {
+                    self.isApplicationActive = true
+                }
+            }
         }
     }
 }

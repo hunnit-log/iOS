@@ -52,22 +52,18 @@ struct WrittenContent: CardContentable {
                     .padding(.top, 5)
             }
             
-            //막대기
             ZStack {
-                ZStack(alignment: .leading) {
-                    Rectangle()
-                        .foregroundColor(.gray)
-                        .frame(height: 18)
-                        .cornerRadius(4)
-                    Rectangle()
-                        .foregroundColor(.yellow)
-                        .frame(width: 60, height: 18)
-                        .cornerRadius(4)
-                    
-                }
-                Text("\(String(format: "%.2f", achievementRate))%")
-                    .font(.system(size: 13))
-                    .fontWeight(.semibold)
+                GeometryReader(content: { geometry in
+                    //막대기
+                    AchievementBar(width: geometry.size.width,
+                                   height: 18,
+                                   achievement: 25)
+                    Text("\(String(format: "%.2f", achievementRate))%")
+                        .font(.system(size: 13))
+                        .fontWeight(.semibold)
+                        .frame(width: geometry.size.width,
+                               height: 18)
+                })
             }
         }
         .padding(.vertical, 19)
@@ -102,7 +98,23 @@ struct AchievementContent: CardContentable {
             Image(systemName: "chevron.right")
                 .frame(width: 24, height: 24)
         }
+        .padding(.top, 16)
+        .padding(.bottom, 14)
         .padding(.leading, 20)
         .padding(.trailing, 11)
+    }
+}
+
+struct CardContentable_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack {
+            ToBeWrittenContent()
+            WrittenContent(period: "2020.10.21 - 2020.11.02",
+                                    title: "다섯번째 회고록",
+                                    achievementRate: 25)
+            UnwrittenContent()
+            AchievementContent(period: "2020. 11. 01 - 2020. 1. 29",
+                                                       achievementRate: 89)
+        }
     }
 }

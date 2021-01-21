@@ -23,8 +23,8 @@ struct CustomAlert: View {
         VStack {
             title
                 .padding(.bottom, 9)
-                .foregroundColor(Color.black)
-                .font(.system(size: 18))
+                .foregroundColor(CustomColor.black)
+                .font(.system(size: 18, weight: .medium))
             
             message
                 .padding(.bottom, 35)
@@ -72,7 +72,7 @@ extension CustomAlert {
             SystemButton(action: {
                 //alert가 띄워져 있는 최상위부터 dismiss 한 후에 action을 perform
                 if let customAlertVC =
-                    UIApplication.shared.windows.first?.rootViewController?.presentedViewController as? CustomAlertViewController {
+                    UIApplication.shared.windows.first?.rootViewController?.presentedViewController as? CustomAlertHostingController {
                     customAlertVC.dismiss(animated: true) {
                         if let action = self.buttonAction {
                             action()
