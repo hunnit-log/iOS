@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ShadowCard: ViewModifier {
+    
+    let cornerRadius: CGFloat
+    init(cornerRadius: CGFloat = 13) {
+        self.cornerRadius = cornerRadius
+    }
+    
     private enum Constants {
-        static let backgroundCornerRadius: CGFloat = 13
         static let backgroundShadowColor: Color = Color(red: 123/255,
                                                         green: 123/255,
                                                         blue: 123/255,
@@ -21,7 +26,7 @@ struct ShadowCard: ViewModifier {
         content
             .background(Rectangle()
                             .fill(Color.white)
-                            .cornerRadius(Constants.backgroundCornerRadius)
+                            .cornerRadius(cornerRadius)
                             .shadow(color: Constants.backgroundShadowColor,
                                     radius: Constants.backgroundShadowRadius,
                                     x: 0.0,

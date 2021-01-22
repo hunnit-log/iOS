@@ -24,3 +24,10 @@ struct AchievementRow<Content: CardContentable>: View {
             }
     }
 }
+
+struct AchievementRow_Previews: PreviewProvider {
+    static var previews: some View {
+        AchievementRow(content: AchievementContent(period: "2020. 11. 01 - 2020. 1. 29",
+                                                   achievementRate: 89))
+    }
+}
