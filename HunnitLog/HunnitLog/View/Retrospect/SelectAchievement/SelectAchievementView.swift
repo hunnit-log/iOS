@@ -12,6 +12,9 @@ struct SelectAchievementView: View {
     let period = "2020. 11. 01 - 2020. 1. 29"
     let title = "다섯번째 회고록"
     
+    //TODO: - 색상 변경 트리거 조건 파악 후 연결
+    @State var isNextActive = false
+    
     var achievements = [Achievement(title: "올해 안에 연애하기", percentage: 65),
                         Achievement(title: "운전면허를 따고 제주도가서 혼자 배낭여행 하기", percentage: 65),
                         Achievement(title: "몸무게 10kg 줄이기", percentage: 35),
@@ -109,7 +112,9 @@ struct SelectAchievementView: View {
                     }
                     
                     //MARK: - 하단 다음 버튼
+                    
                     BottomNextButton(geometry: geometry,
+                                     isActive: $isNextActive,
                                      type: .next,
                                      buttonAction: {})
                 }.edgesIgnoringSafeArea(.bottom)

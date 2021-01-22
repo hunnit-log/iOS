@@ -30,6 +30,9 @@ struct AchievementListView: View {
         AchievementItemViewModel(editable: false, title:  "안녕안녕"),
         AchievementItemViewModel(editable: false, title:  "안녕안녕"),
     ]
+    //TODO: - 색상 변경 트리거 조건 파악 후 연결
+    @State var isNextActive = false
+    
     @State var newItem: AchievementItemViewModel = AchievementItemViewModel(editable: true, title: "")
     
     var tagButtonItems: [TagButtonViewModel] = [
@@ -104,6 +107,7 @@ struct AchievementListView: View {
                 }
             }
             BottomNextButton(geometry: self.geometry,
+                             isActive: $isNextActive,
                              type: .next) {
                 self.isLinkActive = true
             }

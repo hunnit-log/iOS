@@ -33,6 +33,8 @@ struct AchievementDateView: View {
     }
     let geometry: GeometryProxy
     @State var isLinkActive: Bool = false
+    //TODO: - 색상 변경 트리거 조건 파악 후 연결
+    @State var isNextActive = false
     
     var buttonTitleString: String = "2020년 11월 5일"
     var footerString: String = "종료일 : 2021년 5월 4일"
@@ -77,6 +79,7 @@ struct AchievementDateView: View {
                 .padding(.bottom, 27)
             
             BottomNextButton(geometry: self.geometry,
+                             isActive: $isNextActive,
                              type: .next) {
                 self.isLinkActive = true
             }

@@ -15,6 +15,7 @@ struct BottomNextButton: View {
     }
     
     let geometry: GeometryProxy
+    @Binding var isActive: Bool
     let type: NextType
     let buttonAction: (() -> Void)
     
@@ -27,26 +28,27 @@ struct BottomNextButton: View {
     var body: some View {
         Button(action: buttonAction) {
             Text(type.rawValue)
-                .foregroundColor(CustomColor.black)
+                .foregroundColor(isActive ? CustomColor.black : CustomColor.gray)
                 .font(Constants.titleFont)
                 .kerning(Constants.titleLineSpaceing)
                 .frame(maxWidth: .infinity,
                        maxHeight: Constants.height,
                        alignment: .center)
                 .padding(.bottom, geometry.safeAreaInsets.bottom)
-                .background(CustomColor.yellow)
+                .background(isActive ? CustomColor.yellow : CustomColor.lightGray)
         }
     }
 }
 
 struct BottomNextButton_Previews: PreviewProvider {
+    @State static var isActive: Bool = false
+    
     static var previews: some View {
         GeometryReader { geometry in
             BottomNextButton(geometry: geometry,
+                             isActive: $isActive,
                              type: .next,
-                             buttonAction: {
-                                print("next")
-                             })
+                             buttonAction: {})
         }
     }
 }
