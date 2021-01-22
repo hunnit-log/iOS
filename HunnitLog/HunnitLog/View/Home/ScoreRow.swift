@@ -13,6 +13,11 @@ struct ScoreRow: View {
     private let title: String
     private let achievement: Int
     
+    init(title: String, achievement: Int) {
+        self.title = title
+        self.achievement = achievement
+    }
+    
     private var score: Int {
             let roundedValue = Int(round(sliderValue))
             var score: Int
@@ -152,6 +157,7 @@ extension ScoreRow {
 
 struct ScoreRow_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreRow(title: "목표제목입니다목표제목입니다목표제목입니다목표제목입니다목표제목입니다", achievement: 20)
+        ScoreRow(title: "목표제목입니다목표제목입니다목표제목입니다목표제목입니다목표제목입니다",
+                 achievement: 20)
     }
 }

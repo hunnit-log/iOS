@@ -24,6 +24,8 @@ struct AchievementQuestionView: View {
     }
     let geometry: GeometryProxy
     @State var isLinkActive: Bool = false
+    //TODO: - 색상 변경 트리거 조건 파악 후 연결
+    @State var isNextActive = false
     
     var body: some View {
         VStack {
@@ -50,6 +52,7 @@ struct AchievementQuestionView: View {
                 }
             }
             BottomNextButton(geometry: self.geometry,
+                             isActive: $isNextActive,
                              type: .next) {
                 self.isLinkActive = true
             }
