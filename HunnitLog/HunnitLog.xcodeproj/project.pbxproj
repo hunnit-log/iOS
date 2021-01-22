@@ -16,6 +16,7 @@
 		562F69AE256ECBD400C50C97 /* AchievedGoalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69AD256ECBD400C50C97 /* AchievedGoalRow.swift */; };
 		562F69B3256ECC3A00C50C97 /* GoalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69B2256ECC3A00C50C97 /* GoalRow.swift */; };
 		562F69BB256ECCC400C50C97 /* GoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69BA256ECCC400C50C97 /* GoalList.swift */; };
+		56790B61257B792A00920402 /* ScoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56790B60257B792A00920402 /* ScoreRow.swift */; };
 		56790B8D257BE7F000920402 /* ScorePadRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56790B8C257BE7F000920402 /* ScorePadRow.swift */; };
 		56790B92257BE85600920402 /* ScorePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56790B91257BE85600920402 /* ScorePad.swift */; };
 		630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */; };
@@ -99,6 +100,7 @@
 		562F69AD256ECBD400C50C97 /* AchievedGoalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievedGoalRow.swift; sourceTree = "<group>"; };
 		562F69B2256ECC3A00C50C97 /* GoalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRow.swift; sourceTree = "<group>"; };
 		562F69BA256ECCC400C50C97 /* GoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalList.swift; sourceTree = "<group>"; };
+		56790B60257B792A00920402 /* ScoreRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRow.swift; sourceTree = "<group>"; };
 		56790B8C257BE7F000920402 /* ScorePadRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePadRow.swift; sourceTree = "<group>"; };
 		56790B91257BE85600920402 /* ScorePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePad.swift; sourceTree = "<group>"; };
 		630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfableGrayLine.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				562F69B2256ECC3A00C50C97 /* GoalRow.swift */,
 				562F69AD256ECBD400C50C97 /* AchievedGoalRow.swift */,
 				562F69BA256ECCC400C50C97 /* GoalList.swift */,
+				56790B60257B792A00920402 /* ScoreRow.swift */,
 				56790B8C257BE7F000920402 /* ScorePadRow.swift */,
 				56790B91257BE85600920402 /* ScorePad.swift */,
 			);
@@ -602,6 +605,7 @@
 				630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */,
 				63CA190D2579379700CB2283 /* DetailSummary.swift in Sources */,
 				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
+				56790B61257B792A00920402 /* ScoreRow.swift in Sources */,
 				63823E482586581E00374384 /* TextView.swift in Sources */,
 				E0B1886C2576592D003DF180 /* AchievementItemViewModel.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
