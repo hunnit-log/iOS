@@ -17,6 +17,8 @@
 		562F69B3256ECC3A00C50C97 /* GoalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69B2256ECC3A00C50C97 /* GoalRow.swift */; };
 		562F69BB256ECCC400C50C97 /* GoalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F69BA256ECCC400C50C97 /* GoalList.swift */; };
 		56790B61257B792A00920402 /* ScoreRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56790B60257B792A00920402 /* ScoreRow.swift */; };
+		56790B8D257BE7F000920402 /* ScorePadRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56790B8C257BE7F000920402 /* ScorePadRow.swift */; };
+		56790B92257BE85600920402 /* ScorePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56790B91257BE85600920402 /* ScorePad.swift */; };
 		630EBD102566954500CDFA50 /* HalfableGrayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */; };
 		630EBD222566A38800CDFA50 /* RetrospectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD212566A38700CDFA50 /* RetrospectRow.swift */; };
 		630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630EBD2E2566A5F300CDFA50 /* MonthFlagRow.swift */; };
@@ -25,10 +27,12 @@
 		632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A107D2566BCDB0085B126 /* RetrospectView.swift */; };
 		632A10832566BDCB0085B126 /* CardContentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A10822566BDCB0085B126 /* CardContentable.swift */; };
 		632A10B12566CF2B0085B126 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A10B02566CF2B0085B126 /* ContentView.swift */; };
+		633548EE2585E98E006844B0 /* RetrospectWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633548ED2585E98E006844B0 /* RetrospectWriteView.swift */; };
 		635D5F5B25727FD500FEB3EF /* AchievementModalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D5F5A25727FD500FEB3EF /* AchievementModalHeader.swift */; };
 		635D5F63257285C500FEB3EF /* AchievementModalPercentageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D5F62257285C500FEB3EF /* AchievementModalPercentageView.swift */; };
 		635D5F6E25728D4400FEB3EF /* AchievementModalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D5F6D25728D4400FEB3EF /* AchievementModalRow.swift */; };
 		635D5FB5257531EF00FEB3EF /* Feeling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D5FB4257531EF00FEB3EF /* Feeling.swift */; };
+		63823E482586581E00374384 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63823E472586581E00374384 /* TextView.swift */; };
 		6391D16C25655C960007A926 /* HunnitLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391D16B25655C960007A926 /* HunnitLogApp.swift */; };
 		6391D17025655C970007A926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D16F25655C970007A926 /* Assets.xcassets */; };
 		6391D17325655C970007A926 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6391D17225655C970007A926 /* Preview Assets.xcassets */; };
@@ -97,6 +101,8 @@
 		562F69B2256ECC3A00C50C97 /* GoalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRow.swift; sourceTree = "<group>"; };
 		562F69BA256ECCC400C50C97 /* GoalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalList.swift; sourceTree = "<group>"; };
 		56790B60257B792A00920402 /* ScoreRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRow.swift; sourceTree = "<group>"; };
+		56790B8C257BE7F000920402 /* ScorePadRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePadRow.swift; sourceTree = "<group>"; };
+		56790B91257BE85600920402 /* ScorePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePad.swift; sourceTree = "<group>"; };
 		630EBD0F2566954500CDFA50 /* HalfableGrayLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfableGrayLine.swift; sourceTree = "<group>"; };
 		630EBD212566A38700CDFA50 /* RetrospectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectRow.swift; sourceTree = "<group>"; };
 		630EBD2E2566A5F300CDFA50 /* MonthFlagRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthFlagRow.swift; sourceTree = "<group>"; };
@@ -105,10 +111,12 @@
 		632A107D2566BCDB0085B126 /* RetrospectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectView.swift; sourceTree = "<group>"; };
 		632A10822566BDCB0085B126 /* CardContentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentable.swift; sourceTree = "<group>"; };
 		632A10B02566CF2B0085B126 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		633548ED2585E98E006844B0 /* RetrospectWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrospectWriteView.swift; sourceTree = "<group>"; };
 		635D5F5A25727FD500FEB3EF /* AchievementModalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModalHeader.swift; sourceTree = "<group>"; };
 		635D5F62257285C500FEB3EF /* AchievementModalPercentageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModalPercentageView.swift; sourceTree = "<group>"; };
 		635D5F6D25728D4400FEB3EF /* AchievementModalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModalRow.swift; sourceTree = "<group>"; };
 		635D5FB4257531EF00FEB3EF /* Feeling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeling.swift; sourceTree = "<group>"; };
+		63823E472586581E00374384 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		6391D16825655C960007A926 /* HunnitLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HunnitLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6391D16B25655C960007A926 /* HunnitLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunnitLogApp.swift; sourceTree = "<group>"; };
 		6391D16F25655C970007A926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -199,6 +207,8 @@
 				562F69AD256ECBD400C50C97 /* AchievedGoalRow.swift */,
 				562F69BA256ECCC400C50C97 /* GoalList.swift */,
 				56790B60257B792A00920402 /* ScoreRow.swift */,
+				56790B8C257BE7F000920402 /* ScorePadRow.swift */,
+				56790B91257BE85600920402 /* ScorePad.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -213,6 +223,15 @@
 				63CA199F257E679900CB2283 /* SelectAchievement */,
 			);
 			path = Retrospect;
+			sourceTree = "<group>";
+		};
+		633548EC2585E96A006844B0 /* ContentWrite */ = {
+			isa = PBXGroup;
+			children = (
+				633548ED2585E98E006844B0 /* RetrospectWriteView.swift */,
+				63823E472586581E00374384 /* TextView.swift */,
+			);
+			path = ContentWrite;
 			sourceTree = "<group>";
 		};
 		635D5F7E2572924A00FEB3EF /* Main */ = {
@@ -336,6 +355,7 @@
 		63CA192E257BADF300CB2283 /* Write */ = {
 			isa = PBXGroup;
 			children = (
+				633548EC2585E96A006844B0 /* ContentWrite */,
 				63CA1934257BBCF300CB2283 /* AchievementBar.swift */,
 				63CA192F257BAE1C00CB2283 /* RetrospectWriteFinishView.swift */,
 				63CA1939257BC5E300CB2283 /* BottomNextButton.swift */,
@@ -568,6 +588,8 @@
 				E058597E2575CF6F00F5AE0C /* AchievementListView.swift in Sources */,
 				E0B18882257662C0003DF180 /* RetrospectQuestionView.swift in Sources */,
 				562F69B3256ECC3A00C50C97 /* GoalRow.swift in Sources */,
+				56790B8D257BE7F000920402 /* ScorePadRow.swift in Sources */,
+				E030BAFC256D0A5800EC18EC /* KeyWordButton.swift in Sources */,
 				E030BAFC256D0A5800EC18EC /* TagButton.swift in Sources */,
 				632A10762566B9EB0085B126 /* AchievementRow.swift in Sources */,
 				63CA19A4257E679900CB2283 /* SelectAchievementView.swift in Sources */,
@@ -584,6 +606,7 @@
 				63CA190D2579379700CB2283 /* DetailSummary.swift in Sources */,
 				63A4DF14256C193400257ED2 /* CustomAlert.swift in Sources */,
 				56790B61257B792A00920402 /* ScoreRow.swift in Sources */,
+				63823E482586581E00374384 /* TextView.swift in Sources */,
 				E0B1886C2576592D003DF180 /* AchievementItemViewModel.swift in Sources */,
 				632A107E2566BCDB0085B126 /* RetrospectView.swift in Sources */,
 				63CA19122579383E00CB2283 /* RetrospectDetailView.swift in Sources */,
@@ -599,10 +622,12 @@
 				63CA19A6257E679900CB2283 /* StepperButton.swift in Sources */,
 				630EBD2F2566A5F300CDFA50 /* MonthFlagRow.swift in Sources */,
 				63CA1930257BAE1D00CB2283 /* RetrospectWriteFinishView.swift in Sources */,
+				633548EE2585E98E006844B0 /* RetrospectWriteView.swift in Sources */,
 				562F69BB256ECCC400C50C97 /* GoalList.swift in Sources */,
 				632A10832566BDCB0085B126 /* CardContentable.swift in Sources */,
 				63CA193A257BC5E300CB2283 /* BottomNextButton.swift in Sources */,
 				63F09B49256E9E5A00EB9101 /* AchievementRateModalView.swift in Sources */,
+				56790B92257BE85600920402 /* ScorePad.swift in Sources */,
 				635D5F5B25727FD500FEB3EF /* AchievementModalHeader.swift in Sources */,
 				E0B91481256158AA00F93987 /* Tracker.swift in Sources */,
 				63CA19A7257E679900CB2283 /* SelectAchievementRow.swift in Sources */,
